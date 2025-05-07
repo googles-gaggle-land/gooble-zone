@@ -423,6 +423,8 @@
   - type: Stripping
   - type: UserInterface
     interfaces:
+      enum.InstrumentUiKey.Key:
+        type: InstrumentBoundUserInterface #instrument enum added for HapySing quirk.
       enum.HumanoidMarkingModifierKey.Key:
         type: HumanoidMarkingModifierBoundUserInterface
       enum.StrippingUiKey.Key:

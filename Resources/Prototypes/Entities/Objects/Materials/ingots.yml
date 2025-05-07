@@ -100,6 +100,17 @@
     count: 1
 
 - type: entity
+  parent: IngotGold
+  id: IngotGold10
+  name: gold bar
+  suffix: 10
+  components:
+  - type: Sprite
+    state: gold_2
+  - type: Stack
+    count: 10
+
+- type: entity
   parent: IngotBase
   id: IngotSilver
   name: silver bar
@@ -148,3 +159,14 @@
     state: silver
   - type: Stack
     count: 1
+
+  - type: entity
+    parent: IngotSilver
+    id: IngotSilver10
+    name: silver bar
+    suffix: 10
+    components:
+    - type: Sprite
+      state: silver_2
+    - type: Stack
+      count: 10

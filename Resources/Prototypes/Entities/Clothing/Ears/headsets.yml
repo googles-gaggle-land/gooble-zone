@@ -307,6 +307,7 @@
     containers:
       key_slots:
       - EncryptionKeyRobo
+      - EncryptionKeyBinary
       - EncryptionKeyCommon
   - type: Sprite
     sprite: Clothing/Ears/Headsets/robotics.rsi
