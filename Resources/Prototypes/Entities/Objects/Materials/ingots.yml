@@ -150,6 +150,7 @@
           Quantity: 10
 
 - type: entity
+  #parent: IngotSilver, that breaks it.
   id: IngotSilver1
   name: silver bar
   suffix: Single
