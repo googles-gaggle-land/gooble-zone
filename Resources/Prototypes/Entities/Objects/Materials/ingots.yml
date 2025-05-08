@@ -99,6 +99,7 @@
   - type: Stack
     count: 1
 
+
 - type: entity
   parent: IngotGold
   id: IngotGold10

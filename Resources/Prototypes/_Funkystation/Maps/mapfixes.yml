@@ -95,7 +95,7 @@
     currentLabel: lenturi 15u
   - type: StorageFill
     contents:
-    - id: PillLenturi
+    - id: PillDerma
       amount: 8
 
 - type: entity

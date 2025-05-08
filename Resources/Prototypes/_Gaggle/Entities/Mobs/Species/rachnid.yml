@@ -110,7 +110,6 @@
         sprite: "Effects/creampie.rsi"
         state: "creampie_human"
         visible: false
-      - map: [ "culthalo" ] # funky cult
         sprite: "_Funkystation/BloodCult/Effects/halo.rsi"
         state: "halo"
         shader: unshaded
