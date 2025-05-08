@@ -147,7 +147,7 @@ public sealed partial class SpeciesPrototype : IPrototype
     ///     although imagine if ghosts could age people WYCI...
     /// </summary>
     [DataField]
-    public int MaxAge = 120;
+    public int MaxAge = 512; //This is purely for Eeby and any cs nerd who happens on this
 }
 
 public enum SpeciesNaming : byte
@@ -159,4 +159,5 @@ public enum SpeciesNaming : byte
     LastFirst, // DeltaV
     LastNoFirst, // DeltaV
     FirstDashLast, // Goobstation
+    FirstQuoteLast, //gaggle
 }
