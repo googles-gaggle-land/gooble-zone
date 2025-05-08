@@ -150,7 +150,7 @@
           Quantity: 10
 
 - type: entity
-  #parent: IngotSilver, that breaks it.
+  #parent: IngotSilver
   id: IngotSilver1
   name: silver bar
   suffix: Single
@@ -159,6 +159,7 @@
     state: silver
   - type: Stack
     count: 1
+    stackType: Silver
 
   - type: entity
     parent: IngotSilver
