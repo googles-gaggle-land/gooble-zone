@@ -23,6 +23,7 @@
     Head: MobGingerbreadHead
     HeadTop: MobHumanoidAnyMarking
     HeadSide: MobHumanoidAnyMarking
+    Undergarments: MobHumanoidAnyMarking
     Chest: MobGingerbreadTorso
     Eyes: MobGingerbreadEyes
     LArm: MobGingerbreadLArm

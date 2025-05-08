@@ -150,7 +150,6 @@
           Quantity: 10
 
 - type: entity
-  parent: IngotSilver
   id: IngotSilver1
   name: silver bar
   suffix: Single
