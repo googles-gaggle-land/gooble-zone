@@ -361,6 +361,8 @@
           weight: 0.25
         - id: MaterialWoodPlank10
           weight: 0.25
+        - id: SheetDrywall10 # gaggle
+          weight: 0.25
       - id: Plunger
       - id: PowerCellMedium
       - id: PowerCellSmall

@@ -38,6 +38,7 @@
     HeadSide: MobHumanoidAnyMarking
     Tail: MobHumanoidAnyMarking
     Hair: MobHumanoidMarkingMatchSkin
+    Undergarments: MobHumanoidAnyMarking
     Chest: MobIPCTorso
     LArm: MobIPCLArm
     RArm: MobIPCRArm

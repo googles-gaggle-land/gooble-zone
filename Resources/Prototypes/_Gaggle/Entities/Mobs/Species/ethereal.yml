@@ -1,0 +1,148 @@
+- type: entity
+  save: false
+  name: Urist McLight
+  parent: BaseMobSpeciesOrganic
+  id: BaseMobEthereal
+  abstract: true
+  components:
+  - type: HumanoidAppearance
+    species: Ethereal
+    hideLayersOnEquip:
+    - HeadTop
+  - type: Hunger
+  - type: Thirst
+  - type: PointLight
+    energy: 0.5
+    radius: 3
+  - type: Icon
+    sprite: _gaggle/Mobs/Species/Ethereal/parts.rsi
+    state: full
+  - type: Body
+    prototype: Ethereal
+    requiredLegs: 2
+  #- type: EtherealBodyLight
+  # nonexistant component, once its added will make the body's light color match their appearance
+  - type: Damageable
+    damageContainer: Biological
+    damageModifierSet: Ethereal
+  - type: ZombieAccentOverride
+    accent: zombieEthereal
+  - type: Speech
+    speechVerb: Electricity
+  - type: MeleeWeapon
+    soundHit:
+      collection: Punch
+    angle: 30
+    animation: WeaponArcFist
+    attackRate: 1
+    damage:
+      types:
+        Heat: 5
+  - type: TypingIndicator
+    proto: default
+  - type: Bloodstream
+    bloodReagent: LiquidElectricity
+  - type: DamageVisuals
+    damageOverlayGroups:
+      Brute:
+        sprite: Mobs/Effects/brute_damage.rsi
+        color: "#808A51"
+      Burn:
+        sprite: Mobs/Effects/burn_damage.rsi
+  - type: Vocal
+    sounds:
+      Male: UnisexEthereal
+      Female: UnisexEthereal
+      Unsexed: UnisexEthereal
+  - type: MovementSpeedModifier
+  - type: Flammable
+    damage:
+      types:
+        Heat: 1
+  - type: ThermalRegulator
+    normalBodyTemperature: 353.15
+  - type: Temperature # Ethereals hate the cold and thrive in the heat.
+    heatDamageThreshold: 385.15
+    coldDamageThreshold: 280
+    currentTemperature: 353.15
+    specificHeat: 46
+    coldDamage:
+      types:
+        Cold : 1 #per second, scales with temperature & other constants
+    heatDamage:
+      types:
+        Heat : 0.2 #per second, scales with temperature & other constants
+  - type: TemperatureSpeed
+    thresholds:
+      285: 0.6
+      275: 0.4
+      250: 0.2
+  - type: Sprite # sprite again because we want different layer ordering
+    noRot: true
+    drawdepth: Mobs
+    layers:
+      - map: [ "enum.HumanoidVisualLayers.Chest" ]
+      - map: [ "enum.HumanoidVisualLayers.Head" ]
+      - map: [ "enum.HumanoidVisualLayers.Snout" ]
+      - map: [ "enum.HumanoidVisualLayers.Eyes" ]
+      - map: [ "enum.HumanoidVisualLayers.RArm" ]
+      - map: [ "enum.HumanoidVisualLayers.LArm" ]
+      - map: [ "enum.HumanoidVisualLayers.RLeg" ]
+      - map: [ "enum.HumanoidVisualLayers.LLeg" ]
+      - map: [ "enum.HumanoidVisualLayers.LFoot" ] # reordered
+      - map: [ "enum.HumanoidVisualLayers.RFoot" ]
+      - map: ["enum.HumanoidVisualLayers.Undergarments"] # google's gaggle land
+      - map: [ "jumpsuit" ]
+      - map: [ "enum.HumanoidVisualLayers.LHand" ]
+      - map: [ "enum.HumanoidVisualLayers.RHand" ]
+      - map: [ "enum.HumanoidVisualLayers.Handcuffs" ]
+        color: "#ffffff"
+        sprite: Objects/Misc/handcuffs.rsi
+        state: body-overlay-2
+        visible: false
+      - map: [ "gloves" ]
+      - map: [ "shoes" ]
+      - map: [ "ears" ]
+      - map: [ "outerClothing" ]
+      - map: [ "eyes" ]
+      - map: [ "belt" ]
+      - map: [ "id" ]
+      - map: [ "enum.HumanoidVisualLayers.Tail" ] #where are my markings?
+      - map: [ "neck" ]
+      - map: [ "back" ]
+      - map: [ "enum.HumanoidVisualLayers.FacialHair" ]
+      - map: [ "enum.HumanoidVisualLayers.Hair" ]
+      - map: [ "enum.HumanoidVisualLayers.HeadSide" ]
+      - map: [ "enum.HumanoidVisualLayers.HeadTop" ]
+      - map: [ "mask" ]
+      - map: [ "head" ]
+      - map: [ "pocket1" ]
+      - map: [ "pocket2" ]
+      - map: [ "clownedon" ] # Dynamically generated
+        sprite: "Effects/creampie.rsi"
+        state: "creampie_ethereal"
+        visible: false
+  - type: Inventory
+    femaleDisplacements:
+      jumpsuit:
+        sizeMaps:
+          32:
+            sprite: Mobs/Species/Human/displacement.rsi
+            state: jumpsuit-female
+
+
+- type: entity
+  parent: BaseSpeciesDummy
+  id: MobEtherealDummy
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: HumanoidAppearance
+    species: Ethereal
+  - type: Inventory
+    femaleDisplacements:
+      jumpsuit:
+        sizeMaps:
+          32:
+            sprite: Mobs/Species/Human/displacement.rsi
+            state: jumpsuit-female
+

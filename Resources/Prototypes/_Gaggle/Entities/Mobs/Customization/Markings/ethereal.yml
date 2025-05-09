@@ -1,0 +1,140 @@
+# Ethereal markings (HeadTop)
+
+- type: marking
+  id: EtherealHornClipped
+  bodyPart: HeadTop
+  markingCategory: HeadTop
+  forcedColoring: true
+  followSkinColor: true
+  speciesRestriction: [Ethereal]
+  sprites:
+  - sprite: _gaggle/Mobs/Customization/Ethereal/horns.rsi
+    state: clipped
+
+- type: marking
+  id: EtherealHornHelm
+  bodyPart: HeadTop
+  markingCategory: HeadTop
+  forcedColoring: true
+  followSkinColor: true
+  speciesRestriction: [Ethereal]
+  sprites:
+  - sprite: _gaggle/Mobs/Customization/Ethereal/horns.rsi
+    state: helm
+
+- type: marking
+  id: EtherealHornInward
+  bodyPart: HeadTop
+  markingCategory: HeadTop
+  forcedColoring: true
+  followSkinColor: true
+  speciesRestriction: [Ethereal]
+  sprites:
+  - sprite: _gaggle/Mobs/Customization/Ethereal/horns.rsi
+    state: inward
+
+- type: marking
+  id: EtherealHornLunar
+  bodyPart: HeadTop
+  markingCategory: HeadTop
+  forcedColoring: true
+  followSkinColor: true
+  speciesRestriction: [Ethereal]
+  sprites:
+  - sprite: _gaggle/Mobs/Customization/Ethereal/horns.rsi
+    state: lunar
+
+- type: marking
+  id: EtherealHornMajesty
+  bodyPart: HeadTop
+  markingCategory: HeadTop
+  forcedColoring: true
+  followSkinColor: true
+  speciesRestriction: [Ethereal]
+  sprites:
+  - sprite: _gaggle/Mobs/Customization/Ethereal/horns.rsi
+    state: majesty
+
+- type: marking
+  id: EtherealHornSharp
+  bodyPart: HeadTop
+  markingCategory: HeadTop
+  forcedColoring: true
+  followSkinColor: true
+  speciesRestriction: [Ethereal]
+  sprites:
+  - sprite: _gaggle/Mobs/Customization/Ethereal/horns.rsi
+    state: sharp
+
+- type: marking
+  id: EtherealHornShort
+  bodyPart: HeadTop
+  markingCategory: HeadTop
+  forcedColoring: true
+  followSkinColor: true
+  speciesRestriction: [Ethereal]
+  sprites:
+  - sprite: _gaggle/Mobs/Customization/Ethereal/horns.rsi
+    state: short
+    
+# Ethereal markings (Tail)
+
+# long
+
+- type: marking
+  id: EtherealTailLong
+  bodyPart: Tail
+  markingCategory: Tail
+  speciesRestriction: [Ethereal]
+  sprites:
+    - sprite: _gaggle/Mobs/Customization/Ethereal/tail.rsi
+      state: long
+
+- type: marking
+  id: EtherealTailLongAnimated
+  bodyPart: Tail
+  markingCategory: Tail
+  speciesRestriction: [Ethereal]
+  sprites:
+    - sprite: _gaggle/Mobs/Customization/Ethereal/tail.rsi
+      state: wagging_long
+      
+# stubby
+
+- type: marking
+  id: EtherealTailStubby
+  bodyPart: Tail
+  markingCategory: Tail
+  speciesRestriction: [Ethereal]
+  sprites:
+    - sprite: _gaggle/Mobs/Customization/Ethereal/tail.rsi
+      state: stubby
+
+- type: marking
+  id: EtherealTailStubbyAnimated
+  bodyPart: Tail
+  markingCategory: Tail
+  speciesRestriction: [Ethereal]
+  sprites:
+    - sprite: _gaggle/Mobs/Customization/Ethereal/tail.rsi
+      state: wagging_stubby
+      
+# bifurcated
+
+- type: marking
+  id: EtherealTailBifurcated
+  bodyPart: Tail
+  markingCategory: Tail
+  speciesRestriction: [Ethereal]
+  sprites:
+    - sprite: _gaggle/Mobs/Customization/Ethereal/tail.rsi
+      state: bifurcated
+
+- type: marking
+  id: EtherealTailBifurcatedAnimated
+  bodyPart: Tail
+  markingCategory: Tail
+  speciesRestriction: [Ethereal]
+  sprites:
+    - sprite: _gaggle/Mobs/Customization/Ethereal/tail.rsi
+      state: wagging_bifurcated
