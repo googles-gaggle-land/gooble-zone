@@ -1,0 +1,18 @@
+{
+  "version": 1,
+  "license": "CC-BY-SA-3.0",
+  "copyright": "paper_stamp_menfra, paper_stamp_menfra_gal modified from paper_stamp_trader by Cthyga for gaggle",
+  "size": {
+    "x": 32,
+    "y": 32
+  },
+  "states": [
+
+	  {
+          "name": "paper_stamp-menfra"
+      },
+	  {
+          "name": "paper_stamp-menfra-gal"
+      }
+  ]
+}
