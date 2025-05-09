@@ -37,7 +37,7 @@
     - changeling
   name: changeling-gamemode-title
   description: changeling-gamemode-description
-  showInVote: false
+  showInVote: true
   rules:
     - Changeling
     - SubGamemodesRule
@@ -53,7 +53,7 @@
     - traitorling
   name: traitorling-title
   description: traitorling-description
-  showInVote: false
+  showInVote: true
   rules:
     - CalmLing
     - CalmTraitor
@@ -70,7 +70,7 @@
     - optot
   name: nukeops-title
   description: nukeops-description
-  showInVote: false
+  showInVote: true
   rules:
     - Calmops
     - CalmTraitor
@@ -86,7 +86,7 @@
     - opling
   name: nukeops-title
   description: nukeops-description
-  showInVote: false
+  showInVote: true
   rules:
     - Calmops
     - CalmLing
@@ -103,7 +103,7 @@
     - totrevs
   name: revtraitor-title
   description: revtraitor-description
-  showInVote: false
+  showInVote: true
   rules:
     - CalmRevs
     - CalmTraitor
