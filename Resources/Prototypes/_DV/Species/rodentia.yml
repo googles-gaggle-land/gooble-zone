@@ -30,6 +30,7 @@
     Hair: MobHumanoidAnyMarking
     FacialHair: MobHumanoidAnyMarking
     Snout: MobHumanoidAnyMarking
+    Undergarments: MobHumanoidAnyMarking
     Chest: MobRodentiaTorso
     HeadTop: MobHumanoidAnyMarking
     HeadSide: MobHumanoidAnyMarking
@@ -57,6 +58,9 @@
       points: 1
       required: true
       defaultMarkings: [ RodentiaTailDefault ]
+    Undergarments: # google's gaggle land
+      points: 4
+      required: false
     Legs:
       points: 4
       required: false

@@ -30,6 +30,7 @@
     Snout: MobHumanoidAnyMarking
     Hair: MobHumanoidAnyMarking
     FacialHair: MobHumanoidAnyMarking
+    Undergarments: MobHumanoidAnyMarking
     Chest: MobVoxTorso
     Eyes: MobVoxEyes
     LArm: MobVoxLArm
@@ -59,6 +60,9 @@
       points: 1
       required: true
       defaultMarkings: [ VoxBeak ]
+    Undergarments: # google's gaggle land
+      points: 4
+      required: false
     Arms:
       points: 4
       required: true

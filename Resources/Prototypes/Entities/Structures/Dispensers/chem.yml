@@ -54,6 +54,16 @@
   - type: Sprite
     sprite: Structures/dispensers.rsi
     state: industrial-working
+    layers:
+    - state: industrial-off #just disable the unshaded shader, and merge action and working... later! -az
+    - state: industrial-action
+      map: [ "enum.PowerDeviceVisualLayers.Powered" ]
+    - state: industrial-working
+      shader: unshaded
+      map: [ "enum.PowerDeviceVisualLayers.Powered" ]
+    - type: Icon
+      sprite: Structures/Machines/dispensers.rsi
+      state: industrial
     snapCardinals: true
   - type: ReagentDispenser
     storageWhitelist:
@@ -61,6 +71,11 @@
       - ChemDispensable
     pack: ChemDispenserStandardInventory
   - type: ApcPowerReceiver
+    visuals:
+      enum.PowerDeviceVisuals.Powered:
+        enum.PowerDeviceVisualLayers.Powered:
+          True: { visible: true }
+          False: { visible: false }
   - type: ExtensionCableReceiver
   - type: Destructible
     thresholds:

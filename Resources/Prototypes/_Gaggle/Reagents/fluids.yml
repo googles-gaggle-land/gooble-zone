@@ -1,0 +1,19 @@
+﻿- type: reagent
+  id: LiquidElectricity
+  name: reagent-name-liquidelectricity
+  group: Biological
+  desc: reagent-desc-liquidelectricity
+  flavor: bitter
+  color: "#4ADB8F"
+  recognizable: true
+  physicalDesc: reagent-physical-desc-shocking
+  slippery: false
+  metabolisms:
+    Poison:
+      effects:
+        - !type:Electrocute
+          probability: 1
+          conditions:
+            - !type:OrganType
+                type: Ethereal
+                shouldHave: false

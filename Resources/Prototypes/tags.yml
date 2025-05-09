@@ -1640,3 +1640,26 @@
   id: WriteIgnoreStamps
 
 # ALPHABETICAL
+
+#adding for gaggle, will organise... SOMEDAY
+
+- type: Tag
+  id: FelinidEmotes
+
+- type: Tag
+  id: HarpyEmotes
+
+- type: Tag
+  id: VulpEmotes
+
+- type: Tag
+  id: MedicalPatch
+
+- type: Tag
+  id: HEVSuit
+
+- type: Tag
+  id: StasisCage
+
+- type: Tag
+  id: StasisBattery

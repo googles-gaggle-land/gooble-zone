@@ -27,6 +27,7 @@
   sprites:
     Head: MobReptilianHead
     Snout: MobHumanoidAnyMarking
+    Undergarments: MobHumanoidAnyMarking
     Chest: MobReptilianTorso
     HeadTop: MobHumanoidAnyMarking
     HeadSide: MobHumanoidAnyMarking
@@ -59,6 +60,9 @@
       points: 1
       required: true
       defaultMarkings: [ LizardSnoutRound ]
+    Undergarments: # google's gaggle land
+      points: 4
+      required: false
     HeadTop:
       points: 2
       required: false
