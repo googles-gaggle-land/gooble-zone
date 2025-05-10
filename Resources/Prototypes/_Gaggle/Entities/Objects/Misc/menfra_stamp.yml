@@ -12,7 +12,7 @@
   - type: Sprite
     sprite: _gaggle/Objects/Misc/menfra-stamps.rsi
     state: stamp-menfra
-
+    
 - type: entity
   name: Menfra Guild Assistance Liaison Stamp
   parent: RubberStampBase
