@@ -11,6 +11,19 @@
 #
 # SPDX-License-Identifier: AGPL-3.0-or-later
 
+
+- type: entity
+  parent: ClothingNeckBase
+  id: ClothingNeckMedalBase
+  abstract: true
+  name: medal
+  description: not given to anyone
+  components:
+  - type: Tag
+    tags:
+    #- WhitelistChameleon
+    - Medal
+    #rebase medal parents soon -az
 - type: entity
   parent: ClothingNeckBase
   id: ClothingNeckBronzeheart
