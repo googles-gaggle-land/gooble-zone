@@ -620,6 +620,7 @@ namespace Content.Server.Database
 
         public int PreferenceId { get; set; }
         public Preference Preference { get; set; } = null!;
+        public CDModel.CDProfile? CDProfile { get; set; }
     }
 
     public class Job
