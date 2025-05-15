@@ -183,6 +183,7 @@ public abstract class SharedHumanoidAppearanceSystem : EntitySystem
         SetSex(target, sourceHumanoid.Sex, false, targetHumanoid);
         targetHumanoid.CustomBaseLayers = new(sourceHumanoid.CustomBaseLayers);
         targetHumanoid.MarkingSet = new(sourceHumanoid.MarkingSet);
+                targetHumanoid.Height = sourceHumanoid.Height; // CD - Character Records
 
         targetHumanoid.Gender = sourceHumanoid.Gender;
         if (TryComp<GrammarComponent>(target, out var grammar))
@@ -445,6 +446,7 @@ public abstract class SharedHumanoidAppearanceSystem : EntitySystem
         }
 
         humanoid.Age = profile.Age;
+        humanoid.Height = profile.Height; // CD - Character Records
 
         RaiseLocalEvent(uid, new ProfileLoadFinishedEvent()); // Shitmed Change
         Dirty(uid, humanoid);

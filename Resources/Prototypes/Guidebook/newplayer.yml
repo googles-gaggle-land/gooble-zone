@@ -23,7 +23,7 @@
 - type: guideEntry
   id: Radio
   name: guide-entry-radio
-  text: "/ServerInfo/Guidebook/NewPlayer/Controls/Radio.xml" 
+  text: "/ServerInfo/Guidebook/NewPlayer/Controls/Radio.xml"
 
 - type: guideEntry
   id: CharacterCreation
@@ -31,9 +31,15 @@
   text: "/ServerInfo/Guidebook/NewPlayer/CharacterCreation.xml"
   children:
   - YourFirstCharacter
-  - Species 
+  - Species
 
 - type: guideEntry
   id: YourFirstCharacter
   name: guide-entry-yourfirstcharacter
   text: "/ServerInfo/Guidebook/NewPlayer/YourFirstCharacter.xml"
+
+#CD, I cba to make the .yml file for there rn
+- type: guideEntry
+  id: Records
+  name: guide-entry-cd-records
+  text: "/ServerInfo/Guidebook/_CD/Records.xml"
