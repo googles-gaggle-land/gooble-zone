@@ -14149,13 +14149,6 @@ entities:
     - type: Transform
       pos: 12.5,-4.5
       parent: 2
-- proto: StationAnchor
-  entities:
-  - uid: 2406
-    components:
-    - type: Transform
-      pos: -29.5,0.5
-      parent: 2
 - proto: StationMap
   entities:
   - uid: 2497

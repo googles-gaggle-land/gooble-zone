@@ -61,9 +61,9 @@
   - type: Clothing
     sprite: _DV/Clothing/Belt/suspendersblack.rsi
     quickEquip: true
-  - type: Tag
-    tags:
-      - BeltSlotNotBelt
+#  - type: Tag
+#    tags:
+#      - BeltSlotNotBelt DISABLED TEMP
 
 - type: entity
   parent: ClothingBeltStorageBase

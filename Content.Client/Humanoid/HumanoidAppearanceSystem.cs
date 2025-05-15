@@ -43,7 +43,7 @@ public sealed class HumanoidAppearanceSystem : SharedHumanoidAppearanceSystem
     {
         UpdateLayers(component, sprite);
         ApplyMarkingSet(component, sprite);
-
+        
         // Begin CD - Character Records
         var speciesPrototype = _prototypeManager.Index<SpeciesPrototype>(component.Species);
         var height = Math.Clamp(MathF.Round(component.Height, 2), speciesPrototype.MinHeight, speciesPrototype.MaxHeight); // should NOT be locked, at all
