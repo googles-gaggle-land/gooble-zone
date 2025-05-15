@@ -17,6 +17,8 @@ using Content.Shared.Preferences;
 using Robust.Client.GameObjects;
 using Robust.Shared.Prototypes;
 using Robust.Shared.Utility;
+using System.Numerics; // CD - Character Records
+using Robust.Client.Console; // CD - Character Records
 
 namespace Content.Client.Humanoid;
 
@@ -40,7 +42,13 @@ public sealed class HumanoidAppearanceSystem : SharedHumanoidAppearanceSystem
     private void UpdateSprite(HumanoidAppearanceComponent component, SpriteComponent sprite)
     {
         UpdateLayers(component, sprite);
-        ApplyMarkingSet(component, sprite);
+
+        // Begin CD - Character Records
+        var speciesPrototype = _prototypeManager.Index<SpeciesPrototype>(component.Species);
+        var height = Math.Clamp(MathF.Round(component.Height, 2), speciesPrototype.MinHeight, speciesPrototype.MaxHeight); // should NOT be locked, at all
+
+        sprite.Scale = speciesPrototype.BaseScale * new Vector2(speciesPrototype.ScaleHeight ? height : 1f, height); // DV - CD Character Records shouldn't nuke species heights
+        // End CD - Character Records
 
         sprite[sprite.LayerMapReserveBlank(HumanoidVisualLayers.Eyes)].Color = component.EyeColor;
     }
@@ -210,7 +218,7 @@ public sealed class HumanoidAppearanceSystem : SharedHumanoidAppearanceSystem
         humanoid.Age = profile.Age;
         humanoid.Species = profile.Species;
         humanoid.SkinColor = profile.Appearance.SkinColor;
-        humanoid.EyeColor = profile.Appearance.EyeColor;
+        humanoid.Height = profile.Height; // CD - Character Records
 
         UpdateSprite(humanoid, Comp<SpriteComponent>(uid));
     }
