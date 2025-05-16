@@ -11,14 +11,14 @@
 # SPDX-License-Identifier: AGPL-3.0-or-later
 
 - type: trait
-  id: Dementia
-  name: trait-dementia-name
-  description: trait-dementia-desc
+  id: Forgetful
+  name: trait-forgetful-name
+  description: trait-forgetful-desc
   category: SpeechTraits
   cost: 1
   components:
   - type: ReplacementAccent
-    accent: dementia
+    accent: forgetful
 
 - type: trait
   id: ScottishAccent

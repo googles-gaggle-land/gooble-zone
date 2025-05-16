@@ -38,7 +38,7 @@
   alwaysAllowed: true
 
 - type: statusEffect
-  id: Dementia
+  id: Forgetful
 
 - type: statusEffect
   id: MansusGraspAffected

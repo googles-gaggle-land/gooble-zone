@@ -17,7 +17,7 @@ using Robust.Shared.Random;
 
 namespace Content.Goobstation.Server.Speech;
 
-public sealed class DementiaAccentSystem : EntitySystem
+public sealed class ForgetfulAccentSystem : EntitySystem
 {
     [Dependency] private readonly IRobustRandom _random = default!;
     [Dependency] private readonly ReplacementAccentSystem _replacement = default!;
@@ -25,14 +25,14 @@ public sealed class DementiaAccentSystem : EntitySystem
     public override void Initialize()
     {
         base.Initialize();
-        SubscribeLocalEvent<DementiaAccentComponent, AccentGetEvent>(OnAccent);
+        SubscribeLocalEvent<ForgetfulAccentComponent, AccentGetEvent>(OnAccent);
     }
 
-    private void OnAccent(EntityUid uid, DementiaAccentComponent component, AccentGetEvent args)
+    private void OnAccent(EntityUid uid, ForgetfulAccentComponent component, AccentGetEvent args)
     {
         var message = args.Message;
 
-        message = _replacement.ApplyReplacements(message, "dementia");
+        message = _replacement.ApplyReplacements(message, "forgetful");
 
         // Prefix
         if (_random.Prob(0.15f))
@@ -41,7 +41,7 @@ public sealed class DementiaAccentSystem : EntitySystem
 
             // Reverse sanitize capital
             message = message[0].ToString().ToLower() + message.Remove(0, 1);
-            message = Loc.GetString($"accent-dementia-prefix-{pick}") + " " + message;
+            message = Loc.GetString($"accent-forgetful-prefix-{pick}") + " " + message;
         }
 
         // Sanitize capital again, in case we substituted a word that should be capitalized
@@ -51,7 +51,7 @@ public sealed class DementiaAccentSystem : EntitySystem
         if (_random.Prob(0.3f))
         {
             var pick = _random.Next(1, 6);
-            message += Loc.GetString($"accent-dementia-suffix-{pick}");
+            message += Loc.GetString($"accent-forgetful-suffix-{pick}");
         }
 
         args.Message = message;
