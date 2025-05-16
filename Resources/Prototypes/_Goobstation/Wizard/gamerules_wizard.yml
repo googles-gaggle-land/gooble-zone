@@ -41,7 +41,6 @@
       components:
       - type: Wizard
       - type: RandomMetadata
-      - type: CanEnchant
         nameSegments:
         - wizard_first
         - wizard_last
@@ -95,7 +94,6 @@
       components:
       - type: Wizard
       - type: RandomMetadata
-      - type: CanEnchant
         nameSegments:
         - wizard_first
         - wizard_last
@@ -125,7 +123,7 @@
       - MindRoleApprentice
       components:
       - type: Apprentice
-      - type: CanEnchant
+
       - type: NpcFactionMember
         factions:
         - Wizard
