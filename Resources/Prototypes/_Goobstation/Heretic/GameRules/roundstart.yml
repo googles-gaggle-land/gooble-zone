@@ -37,6 +37,7 @@
       - MindRoleHeretic
       components:
       - type: WeakToHoly
+      - type: CanEnchant
   - type: Tag
     tags:
       - RoundstartAntag
@@ -66,6 +67,7 @@
       - MindRoleHeretic
       components:
       - type: WeakToHoly
+      - type: CanEnchant
   - type: Tag
     tags:
       - CalmAntag
