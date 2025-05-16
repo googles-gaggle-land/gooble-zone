@@ -456,6 +456,17 @@
     size: Tiny
 
 - type: entity
+  parent: MobMouse
+  id: MouseMenace
+  name: menace
+  components:
+  - type: EnchantFill
+    enchants:
+      EnchantInsulated: 1 # eat ALL the wires
+      EnchantUnbreaking: 3 # very hard to kill
+      EnchantSharpness: 5 # hit hard ye
+
+- type: entity
   name: Clown Ian
   parent: MobCorgiIan
   id: MobCorgiIanClown
@@ -472,7 +483,7 @@
         Alive:
           Base: clown_ian
         Critical:
-          Base: clown_ian_dead
+          Base: clown_ian_dead  
         Dead:
           Base: clown_ian_dead
     - type: Grammar
@@ -480,7 +491,7 @@
         proper: true
         gender: male
     - type: AutoImplant
-      implants:
+      implants: 
       - SadTromboneImplant
       - BikeHornImplant
     - type: FootstepModifier

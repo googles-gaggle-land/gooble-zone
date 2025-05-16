@@ -38,6 +38,7 @@ using Robust.Shared.Random;
 using System.Linq;
 using System.Text;
 using Content.Goobstation.Common.CCVar;
+using Content.Server._durkcode.ServerCurrency;
 using Content.Server.Objectives.Commands;
 using Content.Shared.CCVar;
 using Content.Shared.Prototypes;
@@ -59,6 +60,7 @@ public sealed class ObjectivesSystem : SharedObjectivesSystem
     [Dependency] private readonly IRobustRandom _random = default!;
     [Dependency] private readonly EmergencyShuttleSystem _emergencyShuttle = default!;
     [Dependency] private readonly SharedJobSystem _job = default!;
+    [Dependency] private readonly ServerCurrencyManager _currencyMan = default!;
     [Dependency] private readonly IConfigurationManager _cfg = default!;
 
     private IEnumerable<string>? _objectives;
@@ -223,6 +225,10 @@ public sealed class ObjectivesSystem : SharedObjectivesSystem
                             ("markupColor", "green")
                         ));
                         completedObjectives++;
+
+                         // Easiest place to give people points for completing objectives lol
+                        if(userid.HasValue)
+                            _currencyMan.AddCurrency(userid.Value, _goobcoinsPerGreentext * _goobcoinsServerMultiplier);
                     }
                     else
                     {

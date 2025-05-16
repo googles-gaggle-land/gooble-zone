@@ -204,7 +204,6 @@ namespace Content.Client.Entry
             IoCManager.BuildGraph();
             IoCManager.InjectDependencies(this);
 
-
             _contentLoc.Initialize();
             _componentFactory.DoAutoRegistrations();
             _componentFactory.IgnoreMissingComponents();
