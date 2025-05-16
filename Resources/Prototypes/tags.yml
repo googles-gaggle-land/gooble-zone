@@ -1663,3 +1663,7 @@
 
 - type: Tag
   id: StasisBattery
+
+
+- type: Tag
+  id: RubberStamp
