@@ -13,7 +13,6 @@ namespace Content.Goobstation.Client.Entry;
 
 public sealed class EntryPoint : GameClient
 {
-    [Dependency] private readonly JoinQueueManager _joinQueue = default!;
 
     public override void PreInit()
     {
@@ -32,6 +31,5 @@ public sealed class EntryPoint : GameClient
     {
         base.PostInit();
 
-        _joinQueue.Initialize();
     }
 }

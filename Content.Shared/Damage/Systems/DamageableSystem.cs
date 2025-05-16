@@ -285,7 +285,7 @@ namespace Content.Shared.Damage
                         DamageSpecifier.PenetrateArmor(modifierSet, armorPenetration)); // Goob edit
                 }
 
-                var ev = new DamageModifyEvent(uid.Value, damage, origin, targetPart, armorPenetration); // Shitmed + Goobstation Change
+                var ev = new DamageModifyEvent(damage, origin, targetPart); // Shitmed Change
                 RaiseLocalEvent(uid.Value, ev);
                 damage = ev.Damage;
 
@@ -561,14 +561,13 @@ namespace Content.Shared.Damage
         public readonly TargetBodyPart? TargetPart; // Shitmed Change
         public float ArmorPenetration; // Goobstation
 
-        public DamageModifyEvent(EntityUid target, DamageSpecifier damage, EntityUid? origin = null, TargetBodyPart? targetPart = null, float armorPenetration = 0) // Shitmed + Goobstation Change
+        public DamageModifyEvent(DamageSpecifier damage, EntityUid? origin = null, TargetBodyPart? targetPart = null) // Shitmed Change
         {
-            Target = target; // Goobstation
             OriginalDamage = damage;
             Damage = damage;
             Origin = origin;
             TargetPart = targetPart; // Shitmed Change
-            ArmorPenetration = armorPenetration; // Goobstation
+            //ArmorPenetration = armorPenetration; // Goobstation
         }
     }
 

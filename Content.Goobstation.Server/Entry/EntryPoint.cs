@@ -4,8 +4,7 @@
 //
 // SPDX-License-Identifier: AGPL-3.0-or-later
 
-using Content.Goobstation.Server.IoC;
-using Content.Goobstation.Common.JoinQueue;
+
 using Robust.Shared.ContentPack;
 using Robust.Shared.IoC;
 
@@ -16,11 +15,6 @@ public sealed class EntryPoint : GameServer
     public override void Init()
     {
         base.Init();
-
-        ServerGoobContentIoC.Register();
-
         IoCManager.BuildGraph();
-
-        IoCManager.Resolve<IJoinQueueManager>().Initialize();
     }
 }

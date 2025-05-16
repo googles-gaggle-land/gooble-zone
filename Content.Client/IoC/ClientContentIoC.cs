@@ -118,8 +118,7 @@
 //
 // SPDX-License-Identifier: AGPL-3.0-or-later
 
-using Content.Client._durkcode.ServerCurrency;
-using Content.Client._RMC14.LinkAccount;
+
 using Content.Client.Administration.Managers;
 using Content.Client.Changelog;
 using Content.Client.Chat.Managers;
@@ -181,8 +180,7 @@ namespace Content.Client.IoC
             collection.Register<PlayerRateLimitManager>();
             collection.Register<SharedPlayerRateLimitManager, PlayerRateLimitManager>();
             collection.Register<TitleWindowManager>();
-            collection.Register<ServerCurrencySystem>(); // Goob Station - Goob Coin
-            collection.Register<LinkAccountManager>(); // RMC14
+
         }
     }
 }

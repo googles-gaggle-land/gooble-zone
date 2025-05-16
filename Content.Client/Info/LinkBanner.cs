@@ -38,7 +38,6 @@
 // SPDX-License-Identifier: AGPL-3.0-or-later
 
 using Content.Client.Changelog;
-﻿using Content.Client._RMC14.LinkAccount;
 using Content.Client.Stylesheets;
 using Content.Client.UserInterface.Systems.EscapeMenu;
 using Content.Client.UserInterface.Systems.Guidebook;
@@ -75,16 +74,7 @@ namespace Content.Client.Info
             AddInfoButton("server-info-website-button", CCVars.InfoLinksWebsite);
             AddInfoButton("server-info-wiki-button", CCVars.InfoLinksWiki);
             AddInfoButton("server-info-forum-button", CCVars.InfoLinksForum);
-            AddInfoButton("server-info-telegram-button", CCVars.InfoLinksTelegram);
-            AddInfoButton("rmc-ui-patreon", CCVars.InfoLinksPatreon);
 
-            var linkAccount = UserInterfaceManager.GetUIController<LinkAccountUIController>();
-            var linkAccountButton = new Button
-            {
-                Text = Loc.GetString("rmc-ui-link-discord-account"),
-            };
-            linkAccountButton.OnPressed += _ => linkAccount.ToggleWindow();
-            buttons.AddChild(linkAccountButton);
 
             var guidebookController = UserInterfaceManager.GetUIController<GuidebookUIController>();
             var guidebookButton = new Button() { Text = Loc.GetString("server-info-guidebook-button") };

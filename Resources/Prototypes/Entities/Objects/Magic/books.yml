@@ -45,7 +45,6 @@
       - state: icon_pentagramm
         color: "#f7e19f"
     - type: Spellbook
-    - type: EnchantingTool # Goobstation
     - type: Tag
       tags:
       - Spellbook
@@ -76,7 +75,6 @@
           type: StoreRefundBoundUserInterface
     - type: ActivatableUI
       key: enum.StoreUiKey.Key
-    - type: EnchantingTool # Goobstation
     - type: Store
       refundAllowed: true
       ownerOnly: true # get your own tome!
@@ -117,7 +115,6 @@
       ownerOnly: false
       balance:
         WizCoin: 50 #Increased currency for more use per book
-    - type: EnchantingTool # Goobstation
     - type: GuideHelp # Goobstation
       guides:
       - Wizard
