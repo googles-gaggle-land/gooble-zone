@@ -162,8 +162,8 @@
       metabolismRate: 0.05
       effects:
       - !type:GenericStatusEffect
-        key: Dementia
-        component: DementiaAccent
+        key: Forgetful
+        component: ForgetfulAccent
       - !type:GenericStatusEffect
         key: Stutter
         component: StutteringAccent
