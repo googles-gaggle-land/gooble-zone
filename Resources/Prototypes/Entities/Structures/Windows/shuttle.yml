@@ -65,7 +65,7 @@
   components:
   - type: Sprite
     drawdepth: WallTops
-    sprite: _gaggle/Structures/Windows/Shiptest/shuttle_window.rsi
+    sprite: _gaggle/Structures/Windows/Shiptest/shuttle_window_diagonal.rsi
     state: state0
   - type: Tag
     tags:
@@ -75,7 +75,7 @@
     key: windows
     base: state
   - type: Icon
-    sprite: _gaggle/Structures/Windows/Shiptest/shuttle_window.rsi
+    sprite: _gaggle/Structures/Windows/Shiptest/shuttle_window_diagonal.rsi
     state: state0
   - type: Fixtures
     fixtures:
