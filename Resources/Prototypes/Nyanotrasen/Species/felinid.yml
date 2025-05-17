@@ -21,7 +21,6 @@
   markingLimits: MobFelinidMarkingLimits
   dollPrototype: MobFelinidDummy
   skinColoration: HumanToned
-  baseScale: "0.8, 0.8"
 
 - type: markingPoints
   id: MobFelinidMarkingLimits

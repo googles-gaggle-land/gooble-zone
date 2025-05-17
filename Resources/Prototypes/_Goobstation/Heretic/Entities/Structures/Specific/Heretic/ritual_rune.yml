@@ -58,6 +58,7 @@
       - !type:PlaySoundBehavior
         sound:
           path: /Audio/_Goobstation/Heretic/runebreak.ogg
+  - type: EnchantingTable # Goobstation
 
 - type: entity
   id: HereticRuneRitualDrawAnimation

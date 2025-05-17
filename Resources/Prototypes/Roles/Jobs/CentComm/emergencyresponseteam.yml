@@ -199,7 +199,8 @@
   special:
   - !type:AddComponentSpecial
     components:
-    - type: BibleUser #Lets them heal with bible
+    - type: BibleUser #Lets them heal with bibles
+    - type: CanEnchant #GoobStation
 
 - type: startingGear
   id: ERTChaplainGear
