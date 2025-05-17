@@ -195,7 +195,6 @@
     - Bible
   - type: StealTarget
     stealGroup: Bible
-  - type: EnchantingTool # Goobstation
 
 - type: entity
   parent: [Bible, BaseSyndicateContraband]

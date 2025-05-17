@@ -26,7 +26,6 @@ using Content.Server.Heretic.Components;
 using Content.Server.Antag;
 using Robust.Shared.Random;
 using System.Linq;
-using Content.Goobstation.Shared.Enchanting.Components;
 using Content.Goobstation.Shared.Religion;
 using Content.Server._Goobstation.Objectives.Components;
 using Content.Server.Actions;
