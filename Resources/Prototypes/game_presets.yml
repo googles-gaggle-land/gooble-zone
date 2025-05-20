@@ -178,7 +178,7 @@
   rules:
     - Secret
     - BasicStationEventScheduler
-    # - LavalandStormScheduler # Lavaland Change # All possible secret choices already contain this
+    - LavalandStormScheduler # Lavaland Change # All possible secret choices already contain this
 
 - type: gamePreset
   id: SecretExtended #For Admin Use: Runs Extended but shows "Secret" in lobby.
@@ -216,6 +216,7 @@
   maxPlayers: 5
   rules:
     - Sandbox
+    - LavalandStormScheduler # Lavaland Change
 
 - type: gamePreset
   id: Traitor
