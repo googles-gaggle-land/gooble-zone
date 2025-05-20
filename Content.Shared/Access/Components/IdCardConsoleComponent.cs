@@ -82,6 +82,7 @@ public sealed partial class IdCardConsoleComponent : Component
         "Medical",
         "Quartermaster",
         "Research",
+        "Robotics", // funkystation
         "ResearchDirector",
         "Salvage",
         "Security",

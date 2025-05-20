@@ -1111,6 +1111,14 @@
   - ScientistMessenger # Frontier
 
 - type: loadoutGroup
+  id: RoboticistBackpack
+  name: loadout-group-scientist-backpack
+  loadouts:
+  - RoboticistBackpack
+  - RoboticistSatchel
+  - RoboticistDuffel
+
+- type: loadoutGroup
   id: ScientistOuterClothing
   name: loadout-group-scientist-outerclothing
   minLimit: 0
@@ -1144,6 +1152,13 @@
   name: loadout-group-scientist-id
   loadouts:
   - ScientistPDA
+  - SeniorResearcherPDA
+
+- type: loadoutGroup
+  id: RoboticsPDA
+  name: loadout-group-roboticist-id
+  loadouts:
+  - RoboticsPDA
   - SeniorResearcherPDA
 
 - type: loadoutGroup
