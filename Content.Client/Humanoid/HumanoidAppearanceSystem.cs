@@ -219,6 +219,7 @@ public sealed class HumanoidAppearanceSystem : SharedHumanoidAppearanceSystem
         humanoid.Age = profile.Age;
         humanoid.Species = profile.Species;
         humanoid.SkinColor = profile.Appearance.SkinColor;
+        humanoid.EyeColor = profile.Appearance.EyeColor;
         humanoid.Height = profile.Height; // CD - Character Records
 
         UpdateSprite(humanoid, Comp<SpriteComponent>(uid));
