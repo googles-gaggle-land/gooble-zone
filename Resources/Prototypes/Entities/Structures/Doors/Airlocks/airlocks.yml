@@ -149,7 +149,7 @@
   suffix: Hydroponics
   components:
   - type: Sprite
-    sprite: _gaggle/Structures/Doors/Airlocks/Standard/hydroponics.rsi
+    sprite: Structures/Doors/Airlocks/Standard/hydroponics.rsi
   - type: Wires
     layoutId: AirlockService
 
@@ -179,7 +179,7 @@
   suffix: Chemistry
   components:
   - type: Sprite
-    sprite: _gaggle/Structures/Doors/Airlocks/Standard/chemistry.rsi
+    sprite: Structures/Doors/Airlocks/Standard/chemistry.rsi
 
 - type: entity
   parent: Airlock
