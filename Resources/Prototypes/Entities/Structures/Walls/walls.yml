@@ -853,10 +853,9 @@
   name: reinforced wall
   components:
   - type: Sprite
-    sprite: Structures/Walls/solid.rsi
+    sprite: _gaggle/Structures/Walls/Shiptest/reinforced.rsi
   - type: Icon
-    sprite: Structures/Walls/solid.rsi
-    state: rgeneric
+    sprite: _gaggle/Structures/Walls/Shiptest/reinforced.rsi
   - type: Construction
     graph: Girder
     node: reinforcedWall
@@ -887,7 +886,7 @@
         acts: ["Destruction"]
   - type: IconSmooth
     key: walls
-    base: reinf_over
+    base: reinf
   - type: Appearance
   - type: GenericVisualizer
     visuals:
@@ -905,27 +904,6 @@
     price: 250
   - type: RadiationBlocker
     resistance: 5
-  # <Goobstation>
-  - type: Fixtures
-    fixtures:
-      fix1:
-        shape:
-          !type:PhysShapeAabb
-          bounds: "-0.5,-0.5,0.5,0.5"
-        mask:
-        - FullTileMask
-        layer:
-        - WallLayer
-        density: 2000 # double normal density
-  - type: RustRequiresPathStage # Goobstation
-    pathStage: 7 # Toxic blade
-  - type: Penetratable # Goobstation - Better snipers
-    penetrateDamage: 100
-    damagePenalty: 0.25
-  - type: CosmicCorruptible # DeltaV - Cosmic Cult
-    convertTo: WallCosmicCult
-  # </Goobstation>
-
 - type: entity
   parent: WallReinforced
   id: WallReinforcedRust
@@ -984,14 +962,14 @@
     - Diagonal
   - type: Sprite
     drawdepth: Walls
-    sprite: _gaggle/Structures/Walls/Shiptest/reinforced_diagonal.rsi
+    sprite: Structures/Walls/reinforced_diagonal.rsi
     state: state0
   - type: IconSmooth
     mode: Diagonal
     key: walls
     base: state
   - type: Icon
-    sprite: _gaggle/Structures/Walls/Shiptest/reinforced_diagonal.rsi
+    sprite: Structures/Walls/reinforced_diagonal.rsi
     state: state0
   - type: RustRequiresPathStage # Goobstation
     pathStage: 7 # Toxic blade
@@ -1313,9 +1291,9 @@
       - !type:DoActsBehavior
         acts: ["Destruction"]
   - type: Sprite
-    sprite: _gaggle/Structures/Walls/Shiptest/shuttle.rsi
+    sprite: Structures/Walls/shuttleinterior.rsi
   - type: Icon
-    sprite: _gaggle/Structures/Walls/Shiptest/shuttle.rsi
+    sprite: Structures/Walls/shuttleinterior.rsi
   - type: Construction
     graph: Girder
     node: shuttleInteriorWall
@@ -1334,13 +1312,13 @@
     tags:
       - Wall
   - type: Sprite
-    sprite: _gaggle/Structures/Walls/Shiptest/solid.rsi
+    sprite: Structures/Walls/solid.rsi
   - type: WallReplacementMarker
   - type: Construction
     graph: Girder
     node: wall
   - type: Icon
-    sprite: _gaggle/Structures/Walls/Shiptest/solid_diagonal.rsi
+    sprite: Structures/Walls/solid.rsi
   - type: RCDDeconstructable
     cost: 6
     delay: 8
@@ -1385,14 +1363,14 @@
   components:
   - type: Sprite
     drawdepth: Walls
-    sprite: /_gaggle/Structures/Walls/Shiptest/solid_diagonal.rsi
+    sprite: Structures/Walls/solid_diagonal.rsi
     state: state0
   - type: IconSmooth
     mode: Diagonal
     key: walls
     base: state
   - type: Icon
-    sprite: /_gaggle/Structures/Walls/Shiptest/solid_diagonal.rsi
+    sprite: Structures/Walls/solid_diagonal.rsi
     state: state0
 
 - type: entity
