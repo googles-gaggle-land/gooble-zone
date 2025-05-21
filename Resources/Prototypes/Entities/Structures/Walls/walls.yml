@@ -1153,18 +1153,19 @@
 
 - type: entity
   parent: BaseWall
-  id: WallShuttle
+  id: WallShuttle #copied everything abt shuttlewallinterior to prevent a crash
   name: shuttle wall
   suffix: Reinforced, Exterior
   components:
-  - type: Damageable
-    damageContainer: StructuralInorganic
-    damageModifierSet: StructuralMetallicStrong
+  - type: RCDDeconstructable
+    cost: 6
+    delay: 8
+    fx: EffectRCDDeconstruct8
   - type: Destructible
     thresholds:
     - trigger:
         !type:DamageTrigger
-        damage: 600
+        damage: 400
       behaviors:
       - !type:DoActsBehavior
         acts: ["Destruction"]
@@ -1173,7 +1174,7 @@
           collection: MetalSlam
     - trigger:
         !type:DamageTrigger
-        damage: 400
+        damage: 200
       behaviors:
       - !type:PlaySoundBehavior
         sound:
@@ -1182,33 +1183,18 @@
         node: girder
       - !type:DoActsBehavior
         acts: ["Destruction"]
-  - type: StaticPrice
-    price: 250
-  - type: RadiationBlocker
-    resistance: 5
   - type: Sprite
-    sprite: Structures/Walls/shuttle.rsi
+    sprite: _gaggle/Structures/Walls/Shiptest/shuttle.rsi
   - type: Icon
-    sprite: Structures/Walls/shuttle.rsi
-    state: full
+    sprite: _gaggle/Structures/Walls/Shiptest/shuttle.rsi
   - type: Construction
     graph: Girder
-    node: shuttleWall
+    node: shuttleInteriorWall
   - type: IconSmooth
     key: walls
-    base: state
-  - type: Appearance
-  - type: GenericVisualizer
-    visuals:
-      enum.ShuttleWallVisuals.DeconstructionStage:
-        ShuttleWallVisualLayers.Deconstruction:
-          -1: { visible: false }
-          0: { state: shuttle_construct-0, visible: true}
-          1: { state: shuttle_construct-1, visible: true}
-          2: { state: shuttle_construct-2, visible: true}
-          3: { state: shuttle_construct-3, visible: true}
-          4: { state: shuttle_construct-4, visible: true}
-          5: { state: shuttle_construct-5, visible: true}
+    base: solid
+  - type: Reflect
+    reflectProb: 1
 
 
 - type: entity
@@ -1271,14 +1257,14 @@
   components:
   - type: Sprite
     drawdepth: Walls
-    sprite: Structures/Walls/solid_diagonal.rsi
+    sprite: _gaggle/Structures/Walls/Shiptest/shuttle.rsi
     state: state0
   - type: IconSmooth
     mode: Diagonal
     key: walls
     base: state
   - type: Icon
-    sprite: Structures/Walls/solid_diagonal.rsi
+    sprite: _gaggle/Structures/Walls/Shiptest/shuttle.rsi
     state: state0
 
 - type: entity
