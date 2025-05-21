@@ -26647,13 +26647,6 @@ entities:
       rot: -1.5707963267948966 rad
       pos: -0.5,-42.5
       parent: 2
-- proto: NiceymovCircuitBoard
-  entities:
-  - uid: 6749
-    components:
-    - type: Transform
-      pos: -36.5,-8.5
-      parent: 2
 - proto: NitrousOxideCanister
   entities:
   - uid: 4009
