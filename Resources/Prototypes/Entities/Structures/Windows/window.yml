@@ -69,9 +69,9 @@
       - Window
   - type: Sprite
     drawdepth: WallTops
-    sprite: Structures/Windows/window.rsi
+    sprite: _gaggle/Structures/Windows/Shiptest/window.rsi
   - type: Icon
-    sprite: Structures/Windows/window.rsi
+    sprite: _gaggle/Structures/Windows/Shiptest/window.rsi
     state: full
   - type: Physics
     bodyType: Static
@@ -259,7 +259,7 @@
   - type: Appearance
   - type: DamageVisuals
     thresholds: [5, 10, 20]
-    trackAllDamage: true
+    trackAllDamage: true****
     damageOverlay:
       sprite: Structures/Windows/cracks_directional.rsi
   - type: StaticPrice
@@ -303,7 +303,7 @@
   components:
   - type: Sprite
     drawdepth: WallTops
-    sprite: Structures/Windows/window_diagonal.rsi
+    sprite: _gaggle/Structures/Windows/Shiptest/window.rsi
     state: state0
   - type: Tag
     tags:
