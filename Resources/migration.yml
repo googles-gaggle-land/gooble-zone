@@ -853,10 +853,6 @@ LightTree04: LightTree
 LightTree05: LightTree
 LightTree06: LightTree
 
-# 2024-12-22 # Lavaland Change: Migrations
-VendingMachineRestockSalvageEquipment: null
-ComputerSalvageExpedition: ComputerShuttleMiningLavaland
-SalvageExpeditionsComputerCircuitboard: LavalandShuttleConsoleCircuitboard
 
 # 2025-01-27
 FoodCondimentPacketFrostoil: FoodCondimentPacketColdsauce
