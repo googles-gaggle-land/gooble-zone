@@ -160,7 +160,7 @@ public sealed partial class SpeciesPrototype : IPrototype
     ///     although imagine if ghosts could age people WYCI...
     /// </summary>
     [DataField]
-    public int MaxAge = 65536; //This is purely for Eeby and any cs nerd who happens on this
+    public int MaxAge = 65535; //This is purely for Eeby and any cs nerd who happens on this
 
     // Begin DV - CD Character Records shouldn't nuke species heights
     /// <summary>
