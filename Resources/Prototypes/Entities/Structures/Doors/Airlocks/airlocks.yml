@@ -284,7 +284,7 @@
   suffix: Engineering
   components:
   - type: Sprite
-    sprite: Structures/Doors/Airlocks/Glass/engineering.rsi
+    sprite: _gaggle/Structures/Doors/Airlocks/Standard/engineering.rsi
   - type: PaintableAirlock
     department: Engineering
   - type: Wires
@@ -296,7 +296,7 @@
   suffix: Maintenance
   components:
   - type: Sprite
-    sprite: Structures/Doors/Airlocks/Glass/maint.rsi
+    sprite: _gaggle/Structures/Doors/Airlocks/Standard/maint.rsi
 
 - type: entity
   parent: AirlockEngineeringGlass
@@ -304,7 +304,7 @@
   suffix: Atmospherics
   components:
   - type: Sprite
-    sprite: Structures/Doors/Airlocks/Glass/atmospherics.rsi
+    sprite: _gaggle/Structures/Doors/Airlocks/Standard/atmospherics.rsi
 
 - type: entity
   parent: AirlockGlass
@@ -312,7 +312,7 @@
   suffix: Cargo
   components:
   - type: Sprite
-    sprite: Structures/Doors/Airlocks/Glass/cargo.rsi
+    sprite: _gaggle/Structures/Doors/Airlocks/Standard/cargo.rsi
   - type: PaintableAirlock
     department: Cargo
   - type: Wires
@@ -324,7 +324,7 @@
   suffix: Hydroponics
   components:
   - type: Sprite
-    sprite: Structures/Doors/Airlocks/Glass/hydroponics.rsi
+    sprite: _gaggle/Structures/Doors/Airlocks/Standard/basic.rsi
   - type: Wires
     layoutId: AirlockService
 
@@ -334,7 +334,7 @@
   suffix: Medical
   components:
   - type: Sprite
-    sprite: Structures/Doors/Airlocks/Glass/medical.rsi
+    sprite: _gaggle/Structures/Doors/Airlocks/Standard/medical.rsi
   - type: PaintableAirlock
     department: Medical
   - type: Wires
@@ -346,7 +346,7 @@
   suffix: Chemistry
   components:
   - type: Sprite
-    sprite: Structures/Doors/Airlocks/Glass/chemistry.rsi
+    sprite: _gaggle/Structures/Doors/Airlocks/Standard/medical.rsi
 
 - type: entity
   parent: AirlockMedicalGlass
@@ -354,7 +354,7 @@
   suffix: Virology
   components:
   - type: Sprite
-    sprite: Structures/Doors/Airlocks/Glass/virology.rsi
+    sprite: _gaggle/Structures/Doors/Airlocks/Standard/medical.rsi
 
 - type: entity
   parent: AirlockGlass
@@ -362,7 +362,7 @@
   suffix: Science
   components:
   - type: Sprite
-    sprite: Structures/Doors/Airlocks/Glass/science.rsi
+    sprite: _gaggle/Structures/Doors/Airlocks/Standard/science.rsi
   - type: PaintableAirlock
     department: Science
   - type: Wires
@@ -374,17 +374,7 @@
   suffix: Robotics
   components:
   - type: Sprite
-    sprite: Structures/Doors/Airlocks/Glass/robotics.rsi
-  - type: PaintableAirlock
-    group: Glass
-
-- type: entity
-  parent: AirlockGlass
-  id: AirlockRoboticsGlass
-  suffix: Robotics
-  components:
-  - type: Sprite
-    sprite: Structures/Doors/Airlocks/Glass/robotics.rsi
+    sprite: _gaggle/Structures/Doors/Airlocks/Standard/science.rsi
   - type: PaintableAirlock
     group: Glass
 
@@ -394,7 +384,7 @@
   suffix: Command
   components:
   - type: Sprite
-    sprite: Structures/Doors/Airlocks/Glass/command.rsi
+    sprite: _gaggle/Structures/Doors/Airlocks/Standard/command.rsi
   - type: PaintableAirlock
     department: Command
   - type: WiresPanelSecurity
@@ -408,7 +398,7 @@
   suffix: Security
   components:
   - type: Sprite
-    sprite: Structures/Doors/Airlocks/Glass/security.rsi
+    sprite: _gaggle/Structures/Doors/Airlocks/Standard/security.rsi
   - type: PaintableAirlock
     department: Security
   - type: Wires
@@ -420,7 +410,7 @@
   suffix: Syndicate
   components:
   - type: Sprite
-    sprite: Structures/Doors/Airlocks/Glass/syndicate.rsi
+    sprite: _gaggle/Structures/Doors/Airlocks/Standard/syndicate.rsi
 
 - type: entity
   parent: AirlockCargoGlass
