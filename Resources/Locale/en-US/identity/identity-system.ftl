@@ -6,7 +6,9 @@
 
 identity-unknown-name = ???
 
-identity-age-young = young
+identity-age-child = very young
+identity-age-teen = young
+identity-age-young = adult
 identity-age-middle-aged = middle-aged
 identity-age-old = old
 

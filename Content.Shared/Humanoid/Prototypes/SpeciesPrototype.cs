@@ -125,19 +125,32 @@ public sealed partial class SpeciesPrototype : IPrototype
     public List<Sex> Sexes { get; private set; } = new() { Sex.Male, Sex.Female };
 
     /// <summary>
-    ///     Characters younger than this are too young to be hired by Nanotrasen.
+    ///     Characters younger than this do NOT exist. Do math.
     /// </summary>
     [DataField]
-    public int MinAge = 18;
+    public int MinAge = 0;
+
+    /// <summary>
+    ///     child assistant person
+    /// </summary>
+    [DataField]
+    public int ChildAge = 13;
 
     /// <summary>
     ///     Characters younger than this appear young.
     /// </summary>
     [DataField]
-    public int YoungAge = 30;
+    public int YoungAge = 18;
+
 
     /// <summary>
-    ///     Characters older than this appear old. Characters in between young and old age appear middle aged.
+    ///     Characters younger than this appear young.
+    /// </summary>
+    [DataField]
+    public int MiddleAge = 29;
+	
+    /// <summary>
+    ///     Characters older than this appear old.
     /// </summary>
     [DataField]
     public int OldAge = 60;
@@ -162,14 +175,16 @@ public sealed partial class SpeciesPrototype : IPrototype
     /// The minimum height for this species
     /// </summary>
     [DataField("minHeight")]
-    public float MinHeight = 0.85f; // DeltaV - less trolling with the heights
+    public float MinHeight = 0.1f; // DeltaV - less trolling with the heights
+	// gaggle update -- we can let people be a little silly.
 
     /// <summary>
     /// The maximum height for this species
     /// </summary>
     [DataField("maxHeight")]
-    public float MaxHeight = 1.2f; // DeltaV - less trolling with the heights
-
+    public float MaxHeight = 2.0f; // DeltaV - less trolling with the heights
+	// gaggle update -- we can let people be a little silly.
+	
     /// <summary>
     /// The default height for this species
     /// </summary>

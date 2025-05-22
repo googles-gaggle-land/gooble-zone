@@ -313,7 +313,7 @@ namespace Content.Shared.Preferences
             if (prototypeManager.TryIndex<SpeciesPrototype>(species, out var speciesPrototype))
             {
                 sex = random.Pick(speciesPrototype.Sexes);
-                age = random.Next(speciesPrototype.MinAge, speciesPrototype.OldAge); // people don't look and keep making 119 year old characters with zero rp, cap it at middle aged
+                age = random.Next(speciesPrototype.YoungAge, speciesPrototype.OldAge); // No child soldiers.
 
                                 height = MathF.Round(random.NextFloat(speciesPrototype.MinHeight, speciesPrototype.MaxHeight), 2); // CD - Character Records
             }
