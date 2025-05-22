@@ -43,6 +43,9 @@ marking-LizardTailSmooth = Lizard Tail (Smooth)
 marking-LizardTailLarge-tail_large = Lizard Tail (Large)
 marking-LizardTailLarge = Lizard Tail (Large)
 
+marking-LizardTailSnake-tail_snake = Lizard Tail (Snake)
+marking-LizardTailSnake = Lizard Tail (Snake)
+
 marking-LizardTailSpikes-tail_spikes = Lizard Tail (Spiky)
 marking-LizardTailSpikes = Lizard Tail (Spiky)
 
