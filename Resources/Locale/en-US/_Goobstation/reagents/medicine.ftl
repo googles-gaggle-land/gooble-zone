@@ -22,9 +22,6 @@ reagent-name-lingdrenaline = Changeling Adrenaline
 reagent-desc-lingdrenaline = A reserve of potent adrenaline stored in a gland capable of immediately recovering a changeling from any fatigue.
 reagent-popup-lingdrenaline = Our entire body violently jitters and shakes.
 
-reagent-name-probital = probital
-reagent-desc-probital = Forces patient's body to spend its energy creating more healing compounds. Overdose exhausts body, forcing what effectively amounts to power naps.
-
 reagent-name-mitogen = mitogen
 reagent-desc-mitogen = Converts nutrients into mitotrophin for highly efficient healing. Can be accidentally overdosed on, resulting in vomiting.
 
@@ -40,9 +37,6 @@ reagent-desc-syriniver = Experimental drug, carries another medicine within and 
 reagent-name-musiver = musiver
 reagent-desc-musiver = Slower acting anti-poison medicine with uniquely tiny molecular footprint.
 
-reagent-name-multiver = multiver
-reagent-desc-multiver = Drug purpose-built to cleanse dangerous chemical mixes. Can be used against simple poisonings, but it's recommended to mix it with other chemicals for higher efficiency.
-
 reagent-name-monover = monover
 reagent-desc-monover = Relatively low complexity anti-poison drug that stops working in impure environments. Its side effects can be potentially used to quickly verify whether bloodstream is clean of chemicals.
 
@@ -51,9 +45,6 @@ reagent-desc-synthcells = Artificially produced "cells" that quickly destroy and
 
 reagent-name-salicylic-acid = salicylic acid
 reagent-desc-salicylic-acid = Powerful healing agent, excelling at restoring most mangled of corpses. Difficult to overdose.
-
-reagent-name-oxandrolone = oxandrolone
-reagent-desc-oxandrolone = Gelatinous chemical that heals burn damage faster the more burnt patient's body is. Difficult to overdose.
 
 reagent-name-pentenic-acid = pentenic acid
 reagent-desc-pentenic-acid = Multipurpose drug, works against poisons and prevents radiation damage from all but strongest sources.
