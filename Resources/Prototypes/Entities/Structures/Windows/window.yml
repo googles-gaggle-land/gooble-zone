@@ -20,9 +20,9 @@
       - Window
   - type: Sprite
     drawdepth: WallTops
-    sprite: Structures/Windows/window.rsi
+    sprite: _gaggle/Structures/Windows/Shiptest/window.rsi
   - type: Icon
-    sprite: Structures/Windows/window.rsi
+    sprite: _gaggle/Structures/Windows/Shiptest/window.rsi
     state: full
   - type: Physics
     bodyType: Static
@@ -72,7 +72,7 @@
         acts: [ "Destruction" ]
   - type: Airtight
   - type: IconSmooth
-    key: windows
+    key: walls
     base: window
   - type: InteractionPopup
     interactSuccessString: comp-window-knock

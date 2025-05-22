@@ -904,23 +904,22 @@
     price: 250
   - type: RadiationBlocker
     resistance: 5
+
 - type: entity
   parent: WallReinforced
   id: WallReinforcedRust
   suffix: rusted
   components:
   - type: Sprite
-    sprite: Structures/Walls/solid_rust.rsi
+    sprite: _gaggle/Structures/Walls/Shiptest/reinforced_rust.rsi
   - type: Icon
-    sprite: Structures/Walls/solid_rust.rsi
-    state: rgeneric
+    sprite: _gaggle/Structures/Walls/Shiptest/reinforced_rust.rsi
   - type: Construction
     graph: Girder
     node: reinforcedWallRust
   - type: IconSmooth
     key: walls
-    base: reinf_over
-  - type: RustedWall # Goobstation
+    base: reinf
   - type: Destructible
     thresholds:
     - trigger:
@@ -943,11 +942,9 @@
         node: girder
       - !type:DoActsBehavior
         acts: ["Destruction"]
-  - type: CosmicCorruptible # DeltaV - Cosmic Cult
-    convertTo: WallCosmicCult
 
 - type: entity
-  parent: WallShuttleDiagonal
+  parent: WallReinforced #WallShuttleDiagonal
   id: WallReinforcedDiagonal
   name: reinforced wall
   suffix: diagonal
@@ -955,24 +952,6 @@
     mode: SnapgridCenter
     snap:
     - Wall
-  components:
-  - type: Tag
-    tags:
-    - Wall # Goobstation
-    - Diagonal
-  - type: Sprite
-    drawdepth: Walls
-    sprite: Structures/Walls/reinforced_diagonal.rsi
-    state: state0
-  - type: IconSmooth
-    mode: Diagonal
-    key: walls
-    base: state
-  - type: Icon
-    sprite: Structures/Walls/reinforced_diagonal.rsi
-    state: state0
-  - type: RustRequiresPathStage # Goobstation
-    pathStage: 7 # Toxic blade
 
 # Riveting
 - type: entity
@@ -1246,26 +1225,10 @@
     convertTo: WallCosmicCult
 
 - type: entity
-  parent: WallShuttleDiagonal
+  parent: WallSolid #WallShuttleDiagonal
   id: WallSolidDiagonal
   name: solid wall
   suffix: diagonal
-  placement:
-    mode: SnapgridCenter
-    snap:
-    - Wall
-  components:
-  - type: Sprite
-    drawdepth: Walls
-    sprite: _gaggle/Structures/Walls/Shiptest/shuttle.rsi
-    state: state0
-  - type: IconSmooth
-    mode: Diagonal
-    key: walls
-    base: state
-  - type: Icon
-    sprite: _gaggle/Structures/Walls/Shiptest/shuttle.rsi
-    state: state0
 
 - type: entity
   parent: WallSolid
@@ -1273,9 +1236,9 @@
   suffix: rusted
   components:
   - type: Sprite
-    sprite: Structures/Walls/solid_rust.rsi
+    sprite: _gaggle/Structures/Walls/Shiptest/solid_rust.rsi
   - type: Icon
-    sprite: Structures/Walls/solid_rust.rsi
+    sprite: _gaggle/Structures/Walls/Shiptest/solid_rust.rsi
     state: full
   - type: Construction
     graph: Girder
