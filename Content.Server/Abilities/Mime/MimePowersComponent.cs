@@ -93,9 +93,5 @@ namespace Content.Server.Abilities.Mime
         /// </summary>
         [DataField]
         public LocId FailWriteMessage = "paper-component-illiterate-mime";
-
-        [DataField]
-        public float PunishmentChance = 0.25f;
-
     }
 }

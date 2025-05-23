@@ -5,6 +5,5 @@
 # SPDX-License-Identifier: AGPL-3.0-or-later
 
 
-
 action-name-eat-mouse = Eat Mouse
 action-description-eat-mouse = Eat the mouse in your hand, gaining nutriment and a hairball charge.

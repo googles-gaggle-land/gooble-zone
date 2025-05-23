@@ -1926,9 +1926,13 @@
   id: MobMouse
   description: Squeak!
   components:
-  - type: VentCrawler # goobstation - Ventcrawl
   - type: Body
     prototype: Mouse
+  - type: SurgeryTarget # Shitmed
+  - type: UserInterface # Shitmed
+    interfaces:
+      enum.SurgeryUIKey.Key:
+        type: SurgeryBui
   - type: GhostRole
     makeSentient: true
     allowSpeech: true
@@ -2023,14 +2027,13 @@
       Dead: 0
     baseDecayRate: 0.04
   - type: Hunger
-    startingHunger: 15 # Goobstation change
     thresholds:
       Overfed: 35
       Okay: 25
       Peckish: 15
       Starving: 10
       Dead: 0
-    baseDecayRate: 0.04 #Goob change
+    baseDecayRate: 0.5 # I'm very hungry! Give me. The cheese.
   - type: Extractable
     grindableSolutionName: food
   - type: SolutionContainerManager
@@ -2039,10 +2042,6 @@
         reagents:
         - ReagentId: UncookedAnimalProteins
           Quantity: 3
-        - ReagentId: MouseBites
-          Quantity: 3
-      melee:
-        maxVol: 5
   - type: Butcherable
     spawned:
     - id: FoodMeatRat
@@ -2056,7 +2055,6 @@
     - ChefPilot
     - Mouse
     - Meat
-    - MouseMind # Goobstation
   - type: Respirator
     damage:
       types:
@@ -2077,21 +2075,19 @@
   # TODO: Remove CombatMode when Prototype Composition is added
   - type: CombatMode
   - type: MeleeWeapon
-    altDisarm: false # Sorry mouse shove lovers.
     soundHit:
       path: /Audio/Effects/bite.ogg
     angle: 0
     animation: WeaponArcBite
     damage:
       types:
-        Slash: 1 # Goobstation - LET THE HORDES ROAM!!
+        Piercing: 1
   - type: Bloodstream
     bloodMaxVolume: 50
   - type: CanEscapeInventory
   - type: MobPrice
     price: 50
   - type: BadFood
-  - type: NonSpreaderZombie
   - type: FireVisuals
     sprite: Mobs/Effects/onfire.rsi
     normalState: Mouse_burning
@@ -2109,39 +2105,10 @@
         sprite:
           sprite: Objects/Consumable/Food/skewer.rsi
           state: skewer-rat
-  # <Goobstation>
-  - type: NightVision
+  - type: NightVision # Goobstation - Nigthvision
+    isToggle: true
     color: "#808080"
-    activateSound: null
-    deactivateSound: null
-  - type: EggLayer
-    eggSpawn:
-    - id: MobMouse
-    hungerUsage: 20
-    eggLayAction: MouseMultiply
-    hungerRequired: true
-  - type: SolutionRegeneration
-    solution: melee
-    generated:
-      reagents:
-      - ReagentId: MouseBites
-        Quantity: 1
-  - type: MeleeChemicalInjector
-    transferAmount: 1
-    solution: melee
-  - type: GibThisGuy
-    ocNames:
-    - Gallagin
-  - type: DodgeWideswing
-    staminaRatio: 1 # mice are small so can probably evade without much stamina drain
-  - type: Stamina
-    critThreshold: 20
-  - type: LayingDown
-  - type: NPCRetaliation
-    attackMemoryLength: 5 # stop caring fast if you don't keep hitting
-  - type: GroupRetaliation
-    range: 5 # slightly lower for mice
-  # </Goobstation>
+    playSoundOn: false
 
 - type: entity
   parent: MobMouse
