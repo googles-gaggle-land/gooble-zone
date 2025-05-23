@@ -1,4 +1,4 @@
-# Purely admin intervention roles.    
+# Purely admin intervention roles.
 - type: playTimeTracker
   id: JobGeneticist
 
@@ -8,8 +8,6 @@
   description: job-description-geneticist
   playTimeTracker: JobGeneticist
   requirements:
-    - !type:OverallPlaytimeRequirement #different chems
-      time: 7200 #2 hrs
     - !type:RoleTimeRequirement
       role: JobMedicalDoctor
       time: 18000 #5 hrs
@@ -25,7 +23,7 @@
     components:
     - type: SurgerySpeedModifier
       SpeedModifier: 1.75
-      
+
 - type: startingGear
   id: GeneticistGear
   equipment:
@@ -33,7 +31,7 @@
     jumpsuit: ClothingUniformJumpsuitGenetics
     shoes: ClothingShoesColorBlack
     ears: ClothingHeadsetMedical
-      
+
 - type: entity
   parent: BaseMedicalPDA
   id: GeneticistPDA
@@ -52,7 +50,7 @@
     accentVColor: "#2a4b5b"
   - type: Icon
     state: pda-paramedic
-    
+
 - type: entity
   parent: IDCardStandard
   id: GeneticistIDCard
@@ -67,15 +65,13 @@
 
 - type: playTimeTracker
   id: JobVirologist
-      
+
 - type: job
   id: Virologist
   name: job-name-virologist
   description: job-description-virologist
   playTimeTracker: JobVirologist
   requirements:
-    - !type:OverallPlaytimeRequirement #different chems
-      time: 7200 #2 hrs
     - !type:RoleTimeRequirement
       role: JobMedicalDoctor
       time: 18000 #5 hrs
@@ -99,7 +95,7 @@
     ears: ClothingHeadsetMedical
     jumpsuit: ClothingUniformJumpsuitVirology
     shoes: ClothingShoesColorBlack
-    
+
 - type: entity
   parent: BaseMedicalPDA
   id: VirologistPDA
@@ -118,7 +114,7 @@
     accentVColor: "#00cc35"
   - type: Icon
     state: pda-internservice
-    
+
 - type: entity
   parent: IDCardStandard
   id: VirologistIDCard

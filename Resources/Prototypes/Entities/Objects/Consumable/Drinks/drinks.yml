@@ -2011,7 +2011,7 @@
   - type: Icon
     sprite: Objects/Consumable/Drinks/singulo.rsi
     state: icon
-
+#yeah
 - type: entity
   parent: DrinkGlass
   id: DrinkSolDryGlass
@@ -2482,7 +2482,7 @@
       drink:
         maxVol: 30
         reagents:
-        - ReagentId: Daiquiri 
+        - ReagentId: Daiquiri
           Quantity: 30
   - type: Icon
     sprite: Objects/Consumable/Drinks/daiquiri.rsi

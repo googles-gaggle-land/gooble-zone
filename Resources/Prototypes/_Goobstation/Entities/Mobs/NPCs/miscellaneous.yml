@@ -405,4 +405,4 @@
       settings: default
     requirements:
     - !type:OverallPlaytimeRequirement
-      time: 18000
+      time: 180

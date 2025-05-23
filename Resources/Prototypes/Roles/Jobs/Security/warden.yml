@@ -134,10 +134,6 @@
   name: job-name-warden
   description: job-description-warden
   playTimeTracker: JobWarden
-  requirements:
-    - !type:RoleTimeRequirement
-      role: JobSecurityOfficer
-      time: 36000 #10 hrs
   weight: 5
   startingGear: WardenGear
   icon: "JobIconWarden"

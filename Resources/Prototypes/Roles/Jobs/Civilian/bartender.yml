@@ -72,9 +72,6 @@
   name: job-name-bartender
   description: job-description-bartender
   playTimeTracker: JobBartender
-  requirements:
-    - !type:OverallPlaytimeRequirement
-      time: 1800 # 30 Minutes
   startingGear: BartenderGear
   icon: "JobIconBartender"
   supervisors: job-supervisors-hop
@@ -86,7 +83,6 @@
   extendedAccess:
   - Kitchen
   - Hydroponics
-
 - type: startingGear
   id: BartenderGear
   equipment:
