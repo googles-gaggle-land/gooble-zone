@@ -175,6 +175,16 @@
   sprites:
   - sprite: Mobs/Customization/reptilian_parts.rsi
     state: tail_large
+    
+
+- type: marking
+  id: LizardTailSnake
+  bodyPart: Tail
+  markingCategory: Tail
+  speciesRestriction: [Reptilian]
+  sprites:
+  - sprite: Mobs/Customization/reptilian_parts.rsi
+    state: tail_snake
 
 - type: marking
   id: LizardTailSpikes

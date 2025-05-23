@@ -23,30 +23,7 @@
   products:
     Lenturi: 3
 
-- type: reaction
-  id: Oxandrolone
-  reactants:
-    Phenol:
-      amount: 1
-    Carbon:
-      amount: 2
-    Lenturi:
-      amount: 1
-  products:
-    Oxandrolone: 4
-
 # poison
-- type: reaction
-  id: Multiver
-  reactants:
-    TableSalt:
-      amount: 1
-    Oil:
-      amount: 1
-    Silicon:
-      amount: 1
-  products:
-    Multiver: 3
 
 - type: reaction
   id: PenteticAcid
@@ -77,31 +54,9 @@
   products:
     Libital: 3
 
-- type: reaction
-  id: Probital
-  reactants:
-    Acetone:
-      amount: 1
-    Copper:
-      amount: 1
-    Phosphorus:
-      amount: 1
-  products:
-    Probital: 3
 
-- type: reaction
-  id: SalicylicAcid
-  reactants:
-    Phenol:
-      amount: 1
-    Probital:
-      amount: 1
-    SulfuricAcid:
-      amount: 1
-    Carbon:
-      amount: 1
-  products:
-    SalicylicAcid: 4
+
+
 
 # airloss
 - type: reaction

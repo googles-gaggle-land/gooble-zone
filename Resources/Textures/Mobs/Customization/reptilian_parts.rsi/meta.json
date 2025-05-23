@@ -1,7 +1,7 @@
 {
   "version": 1,
   "license": "CC-BY-SA-3.0",
-  "copyright": "https://github.com/Skyrat-SS13/Skyrat-tg/tree/40e3cdbb15b8bc0d5ef2fb46133adf805bda5297, while Argali, Ayrshire, Myrsore, Bighorn and Demonic are drawn by Ubaser, and Kobold Ears are drawn by Pigeonpeas. Body_underbelly made by Nairod(github) for SS14. Large drawn by Ubaser. Wagging tail by SonicDC. Splotch modified from Sharp by KittenColony(github). Frills neckfull come from: https://github.com/Bubberstation/Bubberstation/commit/8bc6b83404803466a560b694bf22ef3c0ac266a2, resprited by @mishutka09",
+  "copyright": "https://github.com/Skyrat-SS13/Skyrat-tg/tree/40e3cdbb15b8bc0d5ef2fb46133adf805bda5297, while Argali, Ayrshire, Myrsore, Bighorn and Demonic are drawn by Ubaser, and Kobold Ears are drawn by Pigeonpeas. Body_underbelly made by Nairod(github) for SS14. Large drawn by Ubaser. Wagging tail by SonicDC. Splotch modified from Sharp by KittenColony(github). Frills neckfull come from: https://github.com/Bubberstation/Bubberstation/commit/8bc6b83404803466a560b694bf22ef3c0ac266a2, resprited by @mishutka09. Snake tail comes from Shiptest: https://github.com/shiptest-ss13/Shiptest/commit/88bac9f89d37cabba3de2a4f154bd1387cf675a7",
   "size": {
     "x": 32,
     "y": 32
@@ -9,6 +9,10 @@
   "states": [
     {
       "name": "tail_smooth_front",
+      "directions": 4
+    },
+    {
+      "name": "tail_snake_front",
       "directions": 4
     },
     {
@@ -48,6 +52,10 @@
       "directions": 4
     },
     {
+      "name": "tail_snake_behind",
+      "directions": 4
+    },
+    {
       "name": "tail_dtiger_behind",
       "directions": 4
     },
@@ -76,12 +84,46 @@
       "directions": 4
     },
     {
+      "name": "tail_snake",
+      "directions": 4
+    },
+    {
       "name": "tail_dtiger",
       "directions": 4
     },
     {
       "name": "tail_ltiger",
       "directions": 4
+    },
+    {
+      "name": "tail_snake_wagging",
+      "directions": 4,
+      "delays": [
+        [
+          0.5,
+          0.3,
+          0.8,
+          0.3
+        ],
+        [
+          0.5,
+          0.3,
+          0.8,
+          0.3
+        ],
+        [
+          0.5,
+          0.3,
+          0.8,
+          0.3
+        ],
+        [
+          0.5,
+          0.3,
+          0.8,
+          0.3
+        ]
+      ]
     },
     {
       "name": "tail_smooth_wagging_primary",
