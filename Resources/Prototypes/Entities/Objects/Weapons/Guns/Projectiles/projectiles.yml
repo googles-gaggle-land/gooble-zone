@@ -368,7 +368,7 @@
     impactEffect: BulletImpactEffectDisabler
     damage:
       types:
-        Heat: 0 
+        Heat: 0
     soundHit:
       collection: WeakHit
     forceSound: true
@@ -558,11 +558,11 @@
     impactEffect: BulletImpactEffectKinetic
     damage:
       types:
-        Blunt: 40 # Lavaland Change - TOTAL PKA VICTORY
-#        Structural: 30 Lavaland Change - No easy break-ins :)
+        Blunt: 45
+        Structural: 30
   # Short lifespan
   - type: TimedDespawn
-    lifetime: 0.2 # Lavaland Change
+    lifetime: 0.4
   - type: GatheringProjectile
 
 - type: entity

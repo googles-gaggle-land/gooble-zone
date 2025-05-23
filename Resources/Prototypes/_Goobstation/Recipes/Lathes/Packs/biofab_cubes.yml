@@ -19,9 +19,3 @@
   - TajaranCube
   - VoxCube
   - YowieCube
-
-- type: latheRecipePack
-  id: EmagCubesStatic
-  recipes:
-  - SkibidiCube
-  - FelinidCube

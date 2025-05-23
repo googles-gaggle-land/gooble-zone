@@ -667,9 +667,6 @@ accent-medieval-words-replace-207 = ruffians
 accent-medieval-words-208 = criminals
 accent-medieval-words-replace-208 = ruffians
 
-accent-medieval-words-209 = skibidi
-accent-medieval-words-replace-209 = skee bee dee
-
 accent-medieval-words-210 = nuke
 accent-medieval-words-replace-210 = shell o' holy fire
 
