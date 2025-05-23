@@ -76,11 +76,11 @@ public sealed partial class FelinidSystem : EntitySystem
 
     private void OnInit(EntityUid uid, FelinidComponent component, ComponentInit args)
     {
-        if (component.HairballAction != null)
-            return;
+      //  if (component.HairballAction != null)
+      //      return;
 
         //component.HairballAction = Spawn("ActionHairball");
-        _actionsSystem.AddAction(uid, ref component.HairballAction, component.HairballActionId);
+        //_actionsSystem.AddAction(uid, ref component.HairballAction, component.HairballActionId);
     }
 
     private void OnEquipped(EntityUid uid, FelinidComponent component, DidEquipHandEvent args)
