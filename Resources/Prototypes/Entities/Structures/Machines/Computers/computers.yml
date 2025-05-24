@@ -611,17 +611,20 @@
   parent: BaseComputerAiAccess
   id: ComputerCriminalRecords
   name: criminal records computer
-  description: This can be used to check criminal records. Only security can modify them.
+  description: This can be used to check criminal records. Only security can modify them. # DeltaV Justice can access too
   components:
   - type: CriminalRecordsConsole
   - type: UserInterface
     interfaces:
-       # Begin CD - Character Records
+      # Begin CD - Character Records
       enum.CharacterRecordConsoleKey.Key:
         type: CharacterRecordConsoleBoundUserInterface
       # End CD - Character Records
       enum.WiresUiKey.Key:
         type: WiresBoundUserInterface
+  # Begin CD - Character Records
+  - type: CharacterRecordConsole
+    consoleType: Security
   - type: ActivatableUI
     key: enum.CharacterRecordConsoleKey.Key
   # End CD - Character Records
@@ -644,7 +647,7 @@
   - type: Computer
     board: CriminalRecordsComputerCircuitboard
   - type: AccessReader
-    access: [["Security"]]
+    access: [["Security"]] # DeltaV Justice can access too
   - type: GuideHelp
     guides:
     - CriminalRecords
