@@ -38,6 +38,7 @@
             StationEngineer: [ 1, 2 ]
             ResearchDirector: [ 1, 1 ]
             Scientist: [ 1, 1 ]
+            Borg: [ 1, 1 ]
             Passenger: [ -1, -1 ]
 
         # Goobstation blob-config-start LOW
