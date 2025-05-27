@@ -98,7 +98,7 @@ SPDX-License-Identifier: AGPL-3.0-or-later
                                 </BoxContainer>
                                 <!-- End of Goobstation-->
                                  <!-- Begin CD - Character Records -->
-                                <BoxContainer HorizontalExpand="True" Visible="False"> <!-- DeltaV - we haven't decided on height yet -->
+                                <BoxContainer HorizontalExpand="True" Visible="True"> <!-- DeltaV - we haven't decided on height yet -->
                                     <Label Text="{Loc 'humanoid-profile-editor-height-label'}" />
                                     <Control HorizontalExpand="True" />
                                     <Slider Name="CDHeightSlider" HorizontalAlignment="Right" SetWidth="300" MinValue="0.0" MaxValue="1.0"/>
