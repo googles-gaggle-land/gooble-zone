@@ -52,8 +52,7 @@
   # Lavaland Change start
   - type: WeaponAttachment
     lightActionPrototype: ActionTogglePKALight
-  - type: PressureDamageChange
-    applyToMelee: false
+
   - type: Multishot
     missChance: 0.3
   - type: UpgradeableGun
