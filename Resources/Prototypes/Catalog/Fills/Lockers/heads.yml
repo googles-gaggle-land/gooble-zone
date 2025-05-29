@@ -273,6 +273,9 @@
     - id: RubberStampHop
     - id: WeaponDisablerPlus
     - id: ClothingEyesHudCommand
+    - id: ServiceTechFabCircuitboard # Goobstation - Service Techfab
+    - id: TapeRecorderFilled
+
 
 - type: entity
   id: LockerHeadOfPersonnelFilled
