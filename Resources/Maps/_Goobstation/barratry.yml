@@ -42824,7 +42824,7 @@ entities:
       rot: 3.141592653589793 rad
       pos: -33.5,-10.5
       parent: 2
-- proto: ComputerShuttleMiningLavaland
+- proto: ComputerSalvageExpedition
   entities:
   - uid: 5502
     components:

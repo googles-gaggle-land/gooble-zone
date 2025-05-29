@@ -156,9 +156,9 @@
     - id: RubberStampQm
     - id: SalvageShuttleConsoleCircuitboard
     - id: AstroNavCartridge
-    - id: CargoTechFabCircuitboard # Goobstation - Cargo Techfab
-    - id: MailTeleporterMachineCircuitboard # GoobStation port of DeltaV mail
-    - id: ClothingHandsKnucklesQuartermaster # Goobstation - ROCK THAT MF!!
+    - id: SalvageExpeditionsComputerCircuitboard
+    - id: MailTeleporterMachineCircuitboard
+    - id: ClothingHandsKnucklesQuartermaster
 
 - type: entity
   id: LockerQuarterMasterFilled
@@ -261,9 +261,6 @@
     - id: BoxID
     - id: BoxPDA
     - id: CigarGoldCase
-      prob: 0.25
-      # Fuck the HoP they don't deserve fucking cigars.
-      # Yes they do fuck you.
     - id: ClothingBackpackIan
       prob: 0.5
     - id: ClothingHeadsetAltCommand # Goobstation
@@ -276,7 +273,6 @@
     - id: RubberStampHop
     - id: WeaponDisablerPlus
     - id: ClothingEyesHudCommand
-    - id: ServiceTechFabCircuitboard # Goobstation - Service Techfab
 
 - type: entity
   id: LockerHeadOfPersonnelFilled
@@ -306,7 +302,6 @@
     - id: RCDAmmo
     - id: RubberStampCE
     - id: BaseHandheldStationMapPowerCe
-    - id: EngineeringTechFabCircuitboard # Goobstation - Engineering Techfab
     - id: CartridgeRocketSingularityBuster
     - id: CartridgeRocketSingularityBuster
     - id: WeaponLauncherSingularityBuster
@@ -362,7 +357,7 @@
     - id: ClothingHeadsetAltMedical
     - id: ClothingMaskSterile
     - id: DoorRemoteMedical
-    # - id: HandheldCrewMonitor # Goobstation - in webbing
+    - id: HandheldCrewMonitor
     - id: Hypospray
     - id: MedicalTechFabCircuitboard
     - id: MedkitFilled
@@ -424,20 +419,19 @@
     children:
     - id: Intellicard
     - id: BoxEncryptionKeyScience
-    #- id: CircuitImprinterMachineCircuitboard # Goobstation - Science Techfab
+    - id: CircuitImprinterMachineCircuitboard
     - id: ClothingBeltUtilityFilled
     - id: ClothingHeadsetAltScience
     - id: DoorRemoteResearch
     - id: HandTeleporter
-    #- id: ProtolatheMachineCircuitboard # Goobstation - Science Techfab
+    - id: ProtolatheMachineCircuitboard
     - id: ResearchComputerCircuitboard
     - id: RubberStampRd
-    - id: EncryptionKeyBinary # goobstation - readd the cool binary channel access. fuck you.
-    - id: AnomalyLocator # GoobStation - adding anomaly locator to the RD locker to reduce the amount of anoms that crit
+    - id: EncryptionKeyBinary
+    - id: AnomalyLocator
     - id: CigarCase
-      prob: 0.15 # GoobStation - RD needs cigs for uhh... science...
-    - id: ScienceTechFabCircuitboard # Goobstation - Science Techfab
-    - id: MMI # Goobstation
+      prob: 0.15
+    - id: MMI
 
 # Hardsuit table, used for suit storage as well
 - type: entityTable
@@ -481,7 +475,7 @@
   table: !type:AllSelector
     children:
 #    - id: WeaponEnergyShotgun
-    # - id: WeaponEnergyGunMultiphase # Goobstation - Security Revamp
+    - id: WeaponEnergyGunMultiphase # Goobstation - Security Revamp
     - id: BookSpaceLaw
     - id: BoxEncryptionKeySecurity
     - id: CigarGoldCase
@@ -502,7 +496,7 @@
     - id: SecurityTechFabCircuitboard
     - id: ClothingBeltSheathHeadOfSecurityFilled
     - id: HeadOfSecurityWeaponUndetermined # Goobstation - Security Revamp - End
-    #- id: WeaponDisabler # Goobstation (Disablers in belts)
+    - id: WeaponDisabler # Goobstation (Disablers in belts)
     - id: WantedListCartridge
     - id: DrinkHosFlask
 

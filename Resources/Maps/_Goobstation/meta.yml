@@ -62509,7 +62509,7 @@ entities:
     - type: Transform
       pos: -42.5,17.5
       parent: 2
-- proto: ComputerShuttleMiningLavaland
+- proto: ComputerSalvageExpedition
   entities:
   - uid: 9963
     components:
