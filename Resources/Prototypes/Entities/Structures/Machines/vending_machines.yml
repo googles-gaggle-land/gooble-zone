@@ -1778,7 +1778,7 @@
     access: [["Salvage"]]
   - type: GuideHelp
     guides:
-    - Salvage
+    - Salvage #didn't commit
 
 - type: entity
   parent: VendingMachine
