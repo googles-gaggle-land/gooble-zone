@@ -550,6 +550,7 @@
     - ServiceBoardsStatic
     - CargoBoardsStatic
     - MedicalBoardsStatic
+    - SharedBoardsStatic
     - EngineeringBoardsStatic
     - CircuitFloorsStatic
     # Goobstation Packs
@@ -565,6 +566,11 @@
     - CameraBoards
     - MechBoards
     - ShuttleBoards
+    - EngineeringBoards
+    - ScienceBoards
+    - ShuttleBoards
+    - MedicalBoardsGoob
+    - MechBoardsScience
     # Goobstation Packs
     - SharedBoards
     - UpgradeKits
