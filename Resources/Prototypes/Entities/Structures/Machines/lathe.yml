@@ -477,20 +477,20 @@
     runningState: building
     unlitIdleState: unlit
     unlitRunningState: unlit-building
-    #staticPacks: - Goobstation - Move static recipes to autolathe
-    #- ChemistryStatic
-    #- SurgeryStatic
+    staticPacks:
+    - ChemistryStatic
+    - SurgeryStatic
     dynamicPacks:
     - AdvancedTools
-    #- ScienceEquipment - Goobstation - Moved to Scifab
-    #- ScienceExplosives - Goobstation - Moved to Scifab
+    - ScienceEquipment
+    - ScienceExplosives
     - ScienceClothing
     - PowerCells
-    #- ScienceWeapons - Goobstation - Moved to Scifab
-    #- Mining - Goobstation - Moved to Cargofab
-    #- AtmosTools - Goobstation - Moved to Engifab
-    #- EngineeringWeapons - Goobstation - Moved to Scifab and Engifab
-    #- Chemistry - Goobstation
+    - ScienceWeapons
+    - Mining
+    - AtmosTools
+    - EngineeringWeapons
+    - Chemistry
     - Janitor
     - Instruments
     - Equipment # Goobstation note: handheld mass scanner is removed
@@ -504,7 +504,7 @@
     emagDynamicPacks:
     - SecurityAmmo
     - SecurityExplosives
-    #- SecurityEquipment # Goobstation
+    - SecurityEquipment
     - SecurityWeapons
     # Goobstation Packs
     - SecurityAmmoGoob
@@ -546,11 +546,12 @@
     idleState: icon
     runningState: building
     staticPacks:
-    #- ScienceBoardsStatic - Goobstation - Moved to Scifab
+    - ScienceBoardsStatic
     - ServiceBoardsStatic
     - CargoBoardsStatic
-    #- MedicalBoardsStatic - Goobstation - Moved to Scifab and Medfab
-    #- EngineeringBoardsStatic - Goobstation - Moved to Scifab and Engifab
+    - MedicalBoardsStatic
+    - SharedBoardsStatic
+    - EngineeringBoardsStatic
     - CircuitFloorsStatic
     # Goobstation Packs
     - SharedBoardsStatic
@@ -561,10 +562,15 @@
     - CargoBoards
     - MedicalBoards
     - ServiceBoards
-    #- ScienceBoards - Goobstation - Moved to Scifab
+    - ScienceBoards
     - CameraBoards
-    #- MechBoards - Goobstation - split between departmental lathes
+    - MechBoards
     - ShuttleBoards
+    - EngineeringBoards
+    - ScienceBoards
+    - ShuttleBoards
+    - MedicalBoardsGoob
+    - MechBoardsScience
     # Goobstation Packs
     - SharedBoards
     - UpgradeKits
@@ -694,7 +700,7 @@
   id: SecurityTechFab
   parent: [BaseLatheLube, BaseSiloUtilizer] # Goob edit
   name: security techfab
-  description: Prints equipment and circuitboards for use by security crew. #Goobstation - Circuitboards description
+  description: Prints equipment for use by security crew.
   components:
   - type: Sprite
     sprite: Structures/Machines/techfab.rsi
@@ -724,7 +730,6 @@
     - SecurityEquipmentStaticGoob
     - SecurityHypoStatic
     - MechWeaponsSecurityStatic
-    - SecurityBoardsStaticGoob
     - SecurityBoardsStaticGoob
     - PowerCellsStatic
     - ScienceExplosives
