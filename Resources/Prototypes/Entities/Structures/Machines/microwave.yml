@@ -115,8 +115,6 @@
   components:
   - type: Microwave
     capacity: 10
-    canMicrowaveIdsSafely: false # Goobstation
-    explosionChance: .25 # Goobstation
   - type: Appearance
   - type: GenericVisualizer
     visuals:
@@ -196,11 +194,11 @@
         acts: ["Breakage"]
   - type: Explosive
     explosionType: Default
-    maxIntensity: 5
-    totalIntensity: 2.5
-    intensitySlope: 2.5
+    maxIntensity: 10
+    totalIntensity: 5
+    intensitySlope: 5
     canCreateVacuum: false
-    deleteAfterExplosion: true
+    deleteAfterExplosion: false
   - type: ApcPowerReceiver
     powerLoad: 400
   - type: Machine
@@ -210,13 +208,6 @@
       microwave_entity_container: !type:Container
       machine_board: !type:Container
       machine_parts: !type:Container
-  - type: AutomationSlots # Goobstation
-    slots:
-    - !type:AutomatedContainer
-      input: AutomationSlotInput
-      output: AutomationSlotInput
-      containerId: microwave_entity_container
-      maxItems: 10 # have to manually keep it in sync with capacity on Microwave at the top
   - type: EmptyOnMachineDeconstruct
     containers:
     - microwave_entity_container

@@ -2,7 +2,7 @@
 // SPDX-FileCopyrightText: 2025 deltanedas <@deltanedas:kde.org>
 //
 // SPDX-License-Identifier: AGPL-3.0-or-later
-
+/* GAGGLE CHANGE, WORK ON THIS LATER, IT MAKES MICROWAVES BROKEN!
 using Content.Server.Kitchen.Components;
 using Robust.Shared.Containers;
 
@@ -26,3 +26,4 @@ public sealed class MicrowaveEventsSystem : EntitySystem
         args.Cancel();
     }
 }
+*/
