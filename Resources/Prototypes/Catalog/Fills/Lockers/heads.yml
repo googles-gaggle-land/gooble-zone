@@ -274,8 +274,8 @@
     - id: WeaponDisablerPlus
     - id: ClothingEyesHudCommand
     - id: ServiceTechFabCircuitboard # Goobstation - Service Techfab
+    - id: PDA_cartridge_case #funky change, follow the standards
     - id: TapeRecorderFilled
-
 
 - type: entity
   id: LockerHeadOfPersonnelFilled
