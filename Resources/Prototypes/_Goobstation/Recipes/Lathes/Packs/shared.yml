@@ -9,9 +9,7 @@
 - type: latheRecipePack
   id: SharedBoardsStatic
   recipes:
-  - ProtolatheMachineCircuitboard
   - AutolatheMachineCircuitboard
-  - CircuitImprinterMachineCircuitboard
 
 - type: latheRecipePack
   id: GrenadeTriggersStatic
@@ -24,7 +22,5 @@
 - type: latheRecipePack
   id: SharedBoards
   recipes:
-  - TurboItemRechargerCircuitboard
-  - FlatpackerMachineCircuitboard
   - SheetifierMachineCircuitboard
   - PowerCageRechargerCircuitboard

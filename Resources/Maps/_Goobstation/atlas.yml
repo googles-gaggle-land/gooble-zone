@@ -21453,7 +21453,7 @@ entities:
     - type: Transform
       pos: -20.5,23.5
       parent: 2
-- proto: ComputerShuttleMiningLavaland
+- proto: ComputerSalvageExpedition
   entities:
   - uid: 3358
     components:

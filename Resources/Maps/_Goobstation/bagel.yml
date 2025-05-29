@@ -62425,7 +62425,7 @@ entities:
     - type: Transform
       pos: 56.5,13.5
       parent: 2
-- proto: ComputerShuttleMiningLavaland
+- proto: ComputerSalvageExpedition
   entities:
   - uid: 9546
     components:
