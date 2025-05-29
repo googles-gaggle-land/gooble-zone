@@ -60,7 +60,7 @@
       map: [ "enum.PowerDeviceVisualLayers.Powered" ]
     - type: Icon
       sprite: Structures/Machines/dispensers.rsi
-      state: industrial
+      state: industrial-off
     snapCardinals: true
   - type: ReagentDispenser
     storageWhitelist:

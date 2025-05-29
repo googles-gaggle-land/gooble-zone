@@ -70316,7 +70316,7 @@ entities:
     - type: Transform
       pos: -41.5,-29.5
       parent: 2
-- proto: ComputerShuttleMiningLavaland
+- proto: ComputerSalvageExpedition
   entities:
   - uid: 11173
     components:
