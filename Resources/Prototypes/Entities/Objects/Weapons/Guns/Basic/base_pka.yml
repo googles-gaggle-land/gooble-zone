@@ -52,7 +52,6 @@
   # Lavaland Change start
   - type: WeaponAttachment
     lightActionPrototype: ActionTogglePKALight
-
   - type: Multishot
     missChance: 0.3
   - type: UpgradeableGun
