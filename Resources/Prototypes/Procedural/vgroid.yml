@@ -142,11 +142,42 @@
   - !type:ExteriorDunGen
     proto: Experiment
   - !type:MobsDunGen
-    minCount: 5
-    maxCount: 8
+    minCount: 1
+    maxCount: 3
     groups:
-    - id: MobXeno
-      amount: 1
+     - id: MobXenoRavager
+       amount: 1
+     - id: MobXenoDrone
+       amount: 3
+  - !type:MobsDunGen
+    minCount: 0
+    maxCount: 1
+    groups:
+     - id: MobXenoPraetorian
+       amount: 2
+     - id: MobXenoQueen
+       amount: 1
+  - !type:MobsDunGen
+    minCount: 0
+    maxCount: 2
+    groups:
+     - id: MobXenoSpitter
+       amount: 2
+  - !type:MobsDunGen
+    minCount: 0
+    maxCount: 2
+    groups:
+     - id: MobXenoDrone
+       amount: 5
+  - !type:MobsDunGen
+    minCount: 0
+    maxCount: 2
+    groups:
+     - id: MobXenoRunner
+       amount: 4
+     - id: MobXeno
+       amount: 2
+
 
 #- type: dungeonConfig
 #  id: VGRoidInteriorDungeons
@@ -172,12 +203,35 @@
   # Mobs
   # If you want exterior dungeon mobs add them under the prototype.
   - !type:MobsDunGen
+    minCount: 3
+    maxCount: 5
+    groups:
+     - id: MobXenoRavager
+       amount: 1
+  - !type:MobsDunGen
     minCount: 20
     maxCount: 30
     groups:
-    - id: MobXeno
-      amount: 1
-
+     - id: MobXeno
+       amount: 1
+  - !type:MobsDunGen
+    minCount: 3
+    maxCount: 5
+    groups:
+     - id: MobXenoSpitter
+       amount: 1
+  - !type:MobsDunGen
+    minCount: 10
+    maxCount: 20
+    groups:
+     - id: MobXenoRunner
+       amount: 1
+  - !type:MobsDunGen
+    minCount: 7
+    maxCount: 15
+    groups:
+     - id: MobXenoDrone
+       amount: 1
 #- type: dungeonConfig
 #  id: VGRoidOres
 
