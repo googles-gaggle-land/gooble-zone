@@ -34479,13 +34479,6 @@ entities:
     - type: Transform
       pos: -13.014593,-31.488472
       parent: 2
-- proto: Electrolyzer
-  entities:
-  - uid: 5227
-    components:
-    - type: Transform
-      pos: 34.5,-15.5
-      parent: 2
 - proto: EmergencyLight
   entities:
   - uid: 5228
@@ -59647,13 +59640,6 @@ entities:
     - type: Physics
       angularDamping: 0
       linearDamping: 0
-- proto: NiceymovCircuitBoard
-  entities:
-  - uid: 8827
-    components:
-    - type: Transform
-      pos: -3.4819288,48.4366
-      parent: 2
 - proto: NitrogenCanister
   entities:
   - uid: 8828
@@ -74221,13 +74207,6 @@ entities:
     components:
     - type: Transform
       pos: 1.5,-5.5
-      parent: 2
-- proto: VendingMachinePride
-  entities:
-  - uid: 11155
-    components:
-    - type: Transform
-      pos: -11.5,-24.5
       parent: 2
 - proto: VendingMachineRoboDrobe
   entities:
