@@ -34,6 +34,15 @@
   - type: SouthernAccent
 
 - type: trait
+  id: RussianAccent
+  name: trait-russian-name
+  description: trait-russian-desc
+  category: SpeechTraits
+  cost: 1
+  components:
+  - type: RussianAccent
+
+- type: trait
   id: PirateAccent
   name: trait-pirate-accent-name
   description: trait-pirate-accent-desc
