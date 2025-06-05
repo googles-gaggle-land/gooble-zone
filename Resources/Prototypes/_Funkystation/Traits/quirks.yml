@@ -87,7 +87,7 @@
 - type: trait
   id: TableHider
   name: trait-table-hider-name
-  description: trait-table-hider-desc
+  description: You can sneak under objects like tables that no normal person should fit under, but you take extra damage.
   category: Quirks
   cost: 8 # Literally the rodentia action, blatant why it costs a lot.
   components:
@@ -103,7 +103,7 @@
 - type: trait
   id: SingerTrait
   name: trait-singer-name
-  description: trait-singer-desc
+  description: Sing your heart out!
   category: Quirks
   cost: 3 #feels right, it's just fun!
   components:
@@ -148,7 +148,7 @@
 - type: trait
   id: Resourceful
   name: trait-resourceful-name
-  description: trait-table-hider-desc
+  description: trait-resourceful-desc
   category: Quirks
   cost: 4
   components:
