@@ -17,3 +17,8 @@
   id: Quirks
   name: trait-category-quirks
   maxTraitPoints: 1
+
+- type: traitCategory
+  id: AlcoholTolerance
+  name: Alcohol Tolerance
+  maxTraitPoints: 1
