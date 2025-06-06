@@ -89,10 +89,6 @@
   - SuitWhiteAlt
   - SuitWhiteMob
   - Trackpants
-  - TshirtJeans
-  - TshirtJeansGray
-  - TshirtJeansPeach
-  - TshirtKhaki
   - TurtleneckGrey
   - TurtleneckBlack
   - TurtleneckBlackFlipped
@@ -129,7 +125,6 @@
   - DressOpenShoulder
   - DressOrange
   - DressPuffy
-  - DressRed
   - DressRedSwept
   - DressSailor
   - DressSariGreen
@@ -149,15 +144,6 @@
   - Qipao
   - QipaoSlim
   - WaitressJumpskirt
-  # costumes
-  - DressGeisha
-  - Jabroni
-  - Maid
-  - MioSkirt
-  - NurseSkirt
-  - SchoolgirlBlack
-  - SchoolgirlBlue
-  - SchoolgirlRed
   # turtleneck dresses
   - ClothingUniformJumpskirtRedTurtleneckDress
   - ClothingUniformJumpskirtGreenTurtleneckDress
@@ -191,7 +177,6 @@
   - ShoesBootsFishing
   - ShoesBootsHighheels
   - ShoesBootsLaceup
-  - ShoesBootsMantis
   #- ShoesColorable # for the future... >:)
   - RedShoes
   - OrangeShoes
@@ -203,7 +188,6 @@
   - WhiteShoes
   - BlackShoes
   - ShoesFlippers
-  - ShoesGeta
   - ShoesLeather
   - ShoesLeatherWhite
   - ShoesSlippers
@@ -219,3 +203,33 @@
   - BeltUtility
   - BeltSuspendersRed
   - BeltSuspendersBlack
+
+- type: loadoutGroup
+  id: GaggleExtraClothesHats
+  name: loadout-group-extra-hats
+  minLimit: 0
+  maxLimit: 1
+  loadouts:
+  # gaggle hats
+  # Party Hats
+  - ClothingHeadHatPartyRed
+  - ClothingHeadHatPartyGreen
+  - ClothingHeadHatPartyBlue
+  - ClothingHeadHatPartyYellow
+  # Top hats
+  - ClothingHeadHatBeaverHat
+  - ClothingHeadHatMagician
+  - ClothingHeadHatTophat
+  # Joshua's Beloved (cowboy hats)
+  - ClothingHeadHatCowboyBlack
+  - ClothingHeadHatCowboyBrown
+  - ClothingHeadHatCowboyGrey
+  - ClothingHeadHatCowboyRed
+  - ClothingHeadHatCowboyWhite
+  - ClothingHeadHatCowboyBountyHunter
+  - ClothingHeadAreopagite
+  # Miscellaneous
+  - ClothingHeadHatWitch1
+  - ClothingHeadHatPirate
+  - ClothingHeadPaperSack
+  - ClothingHeadPaperSackSmile
