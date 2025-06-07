@@ -12,12 +12,10 @@
 - type: damageModifierSet
   id: IPC
   coefficients:
-    Blunt: 0.8
-    Slash: 0.8
-    Piercing: 0.8
     Heat: 1.7
     Shock: 2
   # Goobstation
-    Radiation: 0.4
+    Radiation: 0
+    Poison: 0
     Ion: 0.8
   ignoreArmorPierceFlags: All
