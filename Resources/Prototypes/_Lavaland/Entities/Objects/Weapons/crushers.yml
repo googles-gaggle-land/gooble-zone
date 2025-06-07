@@ -91,6 +91,7 @@
       types:
         Blunt: 10
         Slash: 5
+        Structural: 30
     soundHit:
       collection: MetalThud
     angle: 0
@@ -132,6 +133,7 @@
     damage:
       types:
         Blunt: 17.5
+        Structural: 35
     soundHit:
       collection: MetalThud
     angle: 0
@@ -176,6 +178,7 @@
     damage:
       types:
         Slash: 5
+        Structural: 10
     soundHit:
       collection: MetalThud
     angle: 0
@@ -212,6 +215,7 @@
     damage:
       types:
         Slash: 12.5
+        Structural: 25
     soundHit:
       collection: MetalThud
     angle: 0
