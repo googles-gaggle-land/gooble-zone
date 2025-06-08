@@ -482,34 +482,58 @@
     - SurgeryStatic
     dynamicPacks:
     - AdvancedTools
-    - ScienceEquipment
-    - ScienceExplosives
+    #- ScienceEquipment - Goobstation - Moved to Scifab
+    #- ScienceExplosives - Goobstation - Moved to Scifab
     - ScienceClothing
     - PowerCells
-    - ScienceWeapons
-    - Mining
-    - AtmosTools
-    - EngineeringWeapons
-    - Chemistry
+    #- ScienceWeapons - Goobstation - Moved to Scifab
+    #- Mining - Goobstation - Moved to Cargofab
+    #- AtmosTools - Goobstation - Moved to Engifab
+    #- EngineeringWeapons - Goobstation - Moved to Scifab and Engifab
+    #- Chemistry - Goobstation
     - Janitor
     - Instruments
     - Equipment # Goobstation note: handheld mass scanner is removed
     - FauxTiles
     # Goobstation Packs
-    - ServiceWeapons
     - SpecOpsGoogles
     - MedicalMisc
     - MedicalVehiclesAdvanced
+    - AtmosTools
+    - EngineeringWeapons
+    - EngineeringBoards
+    - SharedBoards
+    - CameraBoards
+    - ShuttleBoards
+    - BluespaceTheory
+    - UpgradeKits
+    - Mining
+    - MiningWeapons
+    - MiningBoards
+    - MiningUpgrades
+    - MechBoardsCargo
+    - MechWeaponsSalvage
+    - CargoBoards
+    - Chemistry
+    - Surgery
+    - ScienceBoards
+    - MedicalBoardsGoob
+    - MechBoardsScience
+    - MechBoardsCivilian
+    - MechWeaponsCivilian
+    - ServiceBoards
   - type: EmagLatheRecipes
     emagDynamicPacks:
     - SecurityAmmo
     - SecurityExplosives
-    - SecurityEquipment
+    #- SecurityEquipment # Goobstation
     - SecurityWeapons
     # Goobstation Packs
     - SecurityAmmoGoob
     - SecurityWeaponsGoob
-    - MiningWeapons
+    - SecurityBoards # TF2 reference, go build fucking turrets
+    - MechBoardsSecurity
+    - ServiceBoardsEvilStatic # Donk Co microwave circiutboard
 
 - type: entity
   id: ProtolatheHyperConvection

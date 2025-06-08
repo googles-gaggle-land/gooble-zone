@@ -25,6 +25,16 @@
   - WeaponProtoKineticAccelerator
   - WeaponPlasmaCutter
   - WeaponPlasmaRifle
+  # Begin Goob Mining Weapon additions - Chalk Demon
+  # These currently can't be accessed due to the items not being added to the salvage weapons reasearch. (Doing so will cause a fatal error when selecting Salvage Weapons on the research terminal)
+  - WeaponProtoKineticPistol
+  - WeaponProtoKineticShotgun
+  - WeaponProtoKineticRepeater
+  - LavalandWeaponKineticClaws
+  - LavalandWeaponKineticMachete
+  - LavalandWeaponKineticHammer
+  - LavalandWeaponKineticSpear
+  # End Goob Mining Weapon additions - Chalk Demon
 
 - type: latheRecipePack
   id: MiningBoards
