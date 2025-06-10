@@ -26,6 +26,7 @@
 - type: entity
   id: MeteorRockBSCrystal
   parent: AsteroidRock
+  description: An ore vein rich with bluespace crystals.
   suffix: bluespace crystal
   components:
     - type: OreVein
@@ -44,11 +45,12 @@
           state: rock_asteroid_west
         - state: rock_bluespace_crystal
           map: [ "enum.MiningScannerVisualLayers.Overlay" ]
-          visible: false # Lavaland Change
+          visible: true # Lavaland Change
 
 - type: entity
   id: IronRockBSCrystal
   parent: IronRock
+  description: An ore vein rich with bluespace crystals.
   suffix: bluespace crystal
   components:
     - type: OreVein
@@ -67,11 +69,12 @@
           state: ironrock_west
         - state: rock_bluespace_crystal
           map: [ "enum.MiningScannerVisualLayers.Overlay" ]
-          visible: false # Lavaland Change
+          visible: true # Lavaland Change
 
 - type: entity
   id: WallRockBSCrystal
   parent: WallRock
+  description: An ore vein rich with bluespace crystals.
   suffix: bluespace crystal
   components:
     - type: OreVein
@@ -90,11 +93,12 @@
           state: rock_west
         - state: rock_bluespace_crystal
           map: [ "enum.MiningScannerVisualLayers.Overlay" ]
-          visible: false # Lavaland Change
+          visible: true # Lavaland Change
 
 - type: entity
   id: WallRockBasaltBSCrystal
   parent: WallRockBasalt
+  description: An ore vein rich with bluespace crystals.
   suffix: bluespace crystal
   components:
     - type: OreVein
@@ -113,11 +117,12 @@
           state: rock_wall_west
         - state: rock_bluespace_crystal
           map: [ "enum.MiningScannerVisualLayers.Overlay" ]
-          visible: false # Lavaland Change
+          visible: true # Lavaland Change
 
 - type: entity
   id: WallRockSnowBSCrystal
   parent: WallRockSnow
+  description: An ore vein rich with bluespace crystals.
   suffix: bluespace crystal
   components:
     - type: OreVein
@@ -136,11 +141,12 @@
           state: rock_snow_west
         - state: rock_bluespace_crystal
           map: [ "enum.MiningScannerVisualLayers.Overlay" ]
-          visible: false # Lavaland Change
+          visible: true # Lavaland Change
 
 - type: entity
   id: WallRockSandBSCrystal
   parent: WallRockSand
+  description: An ore vein rich with bluespace crystals.
   suffix: bluespace crystal
   components:
     - type: OreVein
@@ -159,11 +165,12 @@
           state: rock_sand_west
         - state: rock_bluespace_crystal
           map: [ "enum.MiningScannerVisualLayers.Overlay" ]
-          visible: false # Lavaland Change
+          visible: true # Lavaland Change
 
 - type: entity
   id: WallRockChromiteBSCrystal
   parent: WallRockChromite
+  description: An ore vein rich with bluespace crystals.
   suffix: bluespace crystal
   components:
     - type: OreVein
@@ -182,11 +189,12 @@
           state: rock_chromite_west
         - state: rock_bluespace_crystal
           map: [ "enum.MiningScannerVisualLayers.Overlay" ]
-          visible: false # Lavaland Change
+          visible: true # Lavaland Change
 
 - type: entity
   id: WallRockAndesiteBSCrystal
   parent: WallRockAndesite
+  description: An ore vein rich with bluespace crystals.
   suffix: bluespace crystal
   components:
     - type: OreVein
@@ -205,4 +213,4 @@
           state: rock_andesite_west
         - state: rock_bluespace_crystal
           map: [ "enum.MiningScannerVisualLayers.Overlay" ]
-          visible: false # Lavaland Change
+          visible: true # Lavaland Change
